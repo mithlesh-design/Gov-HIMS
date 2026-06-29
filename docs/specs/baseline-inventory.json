@@ -1,0 +1,4324 @@
+{
+  "capturedAt": "2026-06-01T16:09:04.547Z",
+  "capturedAtFrozen": "2026-06-01T18:00:00.000Z",
+  "summary": {
+    "routeCount": 162,
+    "storeCount": 49,
+    "componentCount": 75,
+    "apiSurfaceCount": 18,
+    "totalOnClick": 626,
+    "totalButtons": 563,
+    "totalLinks": 72,
+    "totalInputs": 111,
+    "totalForms": 0,
+    "totalAuditEmits": 3,
+    "totalNativeDialogs": 0,
+    "persistedStores": 45
+  },
+  "routes": [
+    {
+      "url": "/",
+      "file": "src/app/page.tsx"
+    },
+    {
+      "url": "/admin/ai-performance",
+      "file": "src/app/admin/ai-performance/page.tsx"
+    },
+    {
+      "url": "/admin/analytics",
+      "file": "src/app/admin/analytics/page.tsx"
+    },
+    {
+      "url": "/admin/compliance",
+      "file": "src/app/admin/compliance/page.tsx"
+    },
+    {
+      "url": "/admin/coverage",
+      "file": "src/app/admin/coverage/page.tsx"
+    },
+    {
+      "url": "/admin/credentials",
+      "file": "src/app/admin/credentials/page.tsx"
+    },
+    {
+      "url": "/admin/dashboard",
+      "file": "src/app/admin/dashboard/page.tsx"
+    },
+    {
+      "url": "/admin/disha",
+      "file": "src/app/admin/disha/page.tsx"
+    },
+    {
+      "url": "/admin/disputes",
+      "file": "src/app/admin/disputes/page.tsx"
+    },
+    {
+      "url": "/admin/doctor-activity",
+      "file": "src/app/admin/doctor-activity/page.tsx"
+    },
+    {
+      "url": "/admin/duty",
+      "file": "src/app/admin/duty/page.tsx"
+    },
+    {
+      "url": "/admin/finance",
+      "file": "src/app/admin/finance/page.tsx"
+    },
+    {
+      "url": "/admin/hours",
+      "file": "src/app/admin/hours/page.tsx"
+    },
+    {
+      "url": "/admin/on-call",
+      "file": "src/app/admin/on-call/page.tsx"
+    },
+    {
+      "url": "/admin/operations",
+      "file": "src/app/admin/operations/page.tsx"
+    },
+    {
+      "url": "/admin/patients",
+      "file": "src/app/admin/patients/page.tsx"
+    },
+    {
+      "url": "/admin/payroll",
+      "file": "src/app/admin/payroll/page.tsx"
+    },
+    {
+      "url": "/admin/roster",
+      "file": "src/app/admin/roster/page.tsx"
+    },
+    {
+      "url": "/admin/staffing",
+      "file": "src/app/admin/staffing/page.tsx"
+    },
+    {
+      "url": "/admin/statutory",
+      "file": "src/app/admin/statutory/page.tsx"
+    },
+    {
+      "url": "/admin/users",
+      "file": "src/app/admin/users/page.tsx"
+    },
+    {
+      "url": "/admin/vendors",
+      "file": "src/app/admin/vendors/page.tsx"
+    },
+    {
+      "url": "/admission/beds",
+      "file": "src/app/admission/beds/page.tsx"
+    },
+    {
+      "url": "/admission/dashboard",
+      "file": "src/app/admission/dashboard/page.tsx"
+    },
+    {
+      "url": "/admission/forecast",
+      "file": "src/app/admission/forecast/page.tsx"
+    },
+    {
+      "url": "/ambulance/dashboard",
+      "file": "src/app/ambulance/dashboard/page.tsx"
+    },
+    {
+      "url": "/ambulance/dispatch",
+      "file": "src/app/ambulance/dispatch/page.tsx"
+    },
+    {
+      "url": "/ambulance/log",
+      "file": "src/app/ambulance/log/page.tsx"
+    },
+    {
+      "url": "/audit/dashboard",
+      "file": "src/app/audit/dashboard/page.tsx"
+    },
+    {
+      "url": "/audit/log",
+      "file": "src/app/audit/log/page.tsx"
+    },
+    {
+      "url": "/audit/reports",
+      "file": "src/app/audit/reports/page.tsx"
+    },
+    {
+      "url": "/billing/dashboard",
+      "file": "src/app/billing/dashboard/page.tsx"
+    },
+    {
+      "url": "/billing/discounts",
+      "file": "src/app/billing/discounts/page.tsx"
+    },
+    {
+      "url": "/billing/packages",
+      "file": "src/app/billing/packages/page.tsx"
+    },
+    {
+      "url": "/billing/patient/[id]",
+      "file": "src/app/billing/patient/[id]/page.tsx"
+    },
+    {
+      "url": "/billing/refunds",
+      "file": "src/app/billing/refunds/page.tsx"
+    },
+    {
+      "url": "/bloodbank/dashboard",
+      "file": "src/app/bloodbank/dashboard/page.tsx"
+    },
+    {
+      "url": "/bloodbank/donors",
+      "file": "src/app/bloodbank/donors/page.tsx"
+    },
+    {
+      "url": "/bloodbank/inventory",
+      "file": "src/app/bloodbank/inventory/page.tsx"
+    },
+    {
+      "url": "/bloodbank/requests",
+      "file": "src/app/bloodbank/requests/page.tsx"
+    },
+    {
+      "url": "/bmw/dashboard",
+      "file": "src/app/bmw/dashboard/page.tsx"
+    },
+    {
+      "url": "/bmw/log",
+      "file": "src/app/bmw/log/page.tsx"
+    },
+    {
+      "url": "/bmw/reports",
+      "file": "src/app/bmw/reports/page.tsx"
+    },
+    {
+      "url": "/checkin",
+      "file": "src/app/checkin/page.tsx"
+    },
+    {
+      "url": "/checkin/intake",
+      "file": "src/app/checkin/intake/page.tsx"
+    },
+    {
+      "url": "/cssd/cycles",
+      "file": "src/app/cssd/cycles/page.tsx"
+    },
+    {
+      "url": "/cssd/dashboard",
+      "file": "src/app/cssd/dashboard/page.tsx"
+    },
+    {
+      "url": "/cssd/instruments",
+      "file": "src/app/cssd/instruments/page.tsx"
+    },
+    {
+      "url": "/dietary/dashboard",
+      "file": "src/app/dietary/dashboard/page.tsx"
+    },
+    {
+      "url": "/dietary/orders",
+      "file": "src/app/dietary/orders/page.tsx"
+    },
+    {
+      "url": "/dietary/plans",
+      "file": "src/app/dietary/plans/page.tsx"
+    },
+    {
+      "url": "/discharge/dashboard",
+      "file": "src/app/discharge/dashboard/page.tsx"
+    },
+    {
+      "url": "/discharge/summary/[id]",
+      "file": "src/app/discharge/summary/[id]/page.tsx"
+    },
+    {
+      "url": "/discovery",
+      "file": "src/app/discovery/page.tsx"
+    },
+    {
+      "url": "/doctor/ai-assistant",
+      "file": "src/app/doctor/ai-assistant/page.tsx"
+    },
+    {
+      "url": "/doctor/analytics",
+      "file": "src/app/doctor/analytics/page.tsx"
+    },
+    {
+      "url": "/doctor/beds",
+      "file": "src/app/doctor/beds/page.tsx"
+    },
+    {
+      "url": "/doctor/consultation",
+      "file": "src/app/doctor/consultation/page.tsx"
+    },
+    {
+      "url": "/doctor/dashboard",
+      "file": "src/app/doctor/dashboard/page.tsx"
+    },
+    {
+      "url": "/doctor/emergencies",
+      "file": "src/app/doctor/emergencies/page.tsx"
+    },
+    {
+      "url": "/doctor/inbox",
+      "file": "src/app/doctor/inbox/page.tsx"
+    },
+    {
+      "url": "/doctor/ipd",
+      "file": "src/app/doctor/ipd/page.tsx"
+    },
+    {
+      "url": "/doctor/ipd/[id]",
+      "file": "src/app/doctor/ipd/[id]/page.tsx"
+    },
+    {
+      "url": "/doctor/online",
+      "file": "src/app/doctor/online/page.tsx"
+    },
+    {
+      "url": "/doctor/records",
+      "file": "src/app/doctor/records/page.tsx"
+    },
+    {
+      "url": "/doctor/registries",
+      "file": "src/app/doctor/registries/page.tsx"
+    },
+    {
+      "url": "/doctor/schedule",
+      "file": "src/app/doctor/schedule/page.tsx"
+    },
+    {
+      "url": "/doctor/settings",
+      "file": "src/app/doctor/settings/page.tsx"
+    },
+    {
+      "url": "/emergency/dashboard",
+      "file": "src/app/emergency/dashboard/page.tsx"
+    },
+    {
+      "url": "/emergency/floor",
+      "file": "src/app/emergency/floor/page.tsx"
+    },
+    {
+      "url": "/emergency/triage",
+      "file": "src/app/emergency/triage/page.tsx"
+    },
+    {
+      "url": "/family-track/[token]",
+      "file": "src/app/family-track/[token]/page.tsx"
+    },
+    {
+      "url": "/housekeeping/dashboard",
+      "file": "src/app/housekeeping/dashboard/page.tsx"
+    },
+    {
+      "url": "/insurance/claims",
+      "file": "src/app/insurance/claims/page.tsx"
+    },
+    {
+      "url": "/insurance/dashboard",
+      "file": "src/app/insurance/dashboard/page.tsx"
+    },
+    {
+      "url": "/insurance/documents",
+      "file": "src/app/insurance/documents/page.tsx"
+    },
+    {
+      "url": "/insurance/preauth",
+      "file": "src/app/insurance/preauth/page.tsx"
+    },
+    {
+      "url": "/inventory/dashboard",
+      "file": "src/app/inventory/dashboard/page.tsx"
+    },
+    {
+      "url": "/inventory/requests",
+      "file": "src/app/inventory/requests/page.tsx"
+    },
+    {
+      "url": "/inventory/stock",
+      "file": "src/app/inventory/stock/page.tsx"
+    },
+    {
+      "url": "/lab/benches",
+      "file": "src/app/lab/benches/page.tsx"
+    },
+    {
+      "url": "/lab/dashboard",
+      "file": "src/app/lab/dashboard/page.tsx"
+    },
+    {
+      "url": "/lab/inbox",
+      "file": "src/app/lab/inbox/page.tsx"
+    },
+    {
+      "url": "/lab/microbiology",
+      "file": "src/app/lab/microbiology/page.tsx"
+    },
+    {
+      "url": "/lab/qc",
+      "file": "src/app/lab/qc/page.tsx"
+    },
+    {
+      "url": "/lab/reflex",
+      "file": "src/app/lab/reflex/page.tsx"
+    },
+    {
+      "url": "/mortuary/clearances",
+      "file": "src/app/mortuary/clearances/page.tsx"
+    },
+    {
+      "url": "/mortuary/dashboard",
+      "file": "src/app/mortuary/dashboard/page.tsx"
+    },
+    {
+      "url": "/mortuary/records",
+      "file": "src/app/mortuary/records/page.tsx"
+    },
+    {
+      "url": "/nurse/ai-assistant",
+      "file": "src/app/nurse/ai-assistant/page.tsx"
+    },
+    {
+      "url": "/nurse/dashboard",
+      "file": "src/app/nurse/dashboard/page.tsx"
+    },
+    {
+      "url": "/nurse/fluid-balance",
+      "file": "src/app/nurse/fluid-balance/page.tsx"
+    },
+    {
+      "url": "/nurse/handover",
+      "file": "src/app/nurse/handover/page.tsx"
+    },
+    {
+      "url": "/nurse/medication",
+      "file": "src/app/nurse/medication/page.tsx"
+    },
+    {
+      "url": "/nurse/messages",
+      "file": "src/app/nurse/messages/page.tsx"
+    },
+    {
+      "url": "/nurse/orders",
+      "file": "src/app/nurse/orders/page.tsx"
+    },
+    {
+      "url": "/nurse/patients",
+      "file": "src/app/nurse/patients/page.tsx"
+    },
+    {
+      "url": "/nurse/patients/[id]",
+      "file": "src/app/nurse/patients/[id]/page.tsx"
+    },
+    {
+      "url": "/nurse/rounds",
+      "file": "src/app/nurse/rounds/page.tsx"
+    },
+    {
+      "url": "/nurse/tasks",
+      "file": "src/app/nurse/tasks/page.tsx"
+    },
+    {
+      "url": "/nurse/vitals-requests",
+      "file": "src/app/nurse/vitals-requests/page.tsx"
+    },
+    {
+      "url": "/ot/checklist",
+      "file": "src/app/ot/checklist/page.tsx"
+    },
+    {
+      "url": "/ot/dashboard",
+      "file": "src/app/ot/dashboard/page.tsx"
+    },
+    {
+      "url": "/ot/schedule",
+      "file": "src/app/ot/schedule/page.tsx"
+    },
+    {
+      "url": "/patient/ai-care",
+      "file": "src/app/patient/ai-care/page.tsx"
+    },
+    {
+      "url": "/patient/ambulance",
+      "file": "src/app/patient/ambulance/page.tsx"
+    },
+    {
+      "url": "/patient/appointments",
+      "file": "src/app/patient/appointments/page.tsx"
+    },
+    {
+      "url": "/patient/assistant",
+      "file": "src/app/patient/assistant/page.tsx"
+    },
+    {
+      "url": "/patient/billing",
+      "file": "src/app/patient/billing/page.tsx"
+    },
+    {
+      "url": "/patient/blood-bank",
+      "file": "src/app/patient/blood-bank/page.tsx"
+    },
+    {
+      "url": "/patient/consultations",
+      "file": "src/app/patient/consultations/page.tsx"
+    },
+    {
+      "url": "/patient/dashboard",
+      "file": "src/app/patient/dashboard/page.tsx"
+    },
+    {
+      "url": "/patient/discharge",
+      "file": "src/app/patient/discharge/page.tsx"
+    },
+    {
+      "url": "/patient/downloads",
+      "file": "src/app/patient/downloads/page.tsx"
+    },
+    {
+      "url": "/patient/emergency",
+      "file": "src/app/patient/emergency/page.tsx"
+    },
+    {
+      "url": "/patient/family-track/[token]",
+      "file": "src/app/patient/family-track/[token]/page.tsx"
+    },
+    {
+      "url": "/patient/followup",
+      "file": "src/app/patient/followup/page.tsx"
+    },
+    {
+      "url": "/patient/health-story",
+      "file": "src/app/patient/health-story/page.tsx"
+    },
+    {
+      "url": "/patient/help",
+      "file": "src/app/patient/help/page.tsx"
+    },
+    {
+      "url": "/patient/insurance",
+      "file": "src/app/patient/insurance/page.tsx"
+    },
+    {
+      "url": "/patient/ipd",
+      "file": "src/app/patient/ipd/page.tsx"
+    },
+    {
+      "url": "/patient/medications",
+      "file": "src/app/patient/medications/page.tsx"
+    },
+    {
+      "url": "/patient/orders",
+      "file": "src/app/patient/orders/page.tsx"
+    },
+    {
+      "url": "/patient/pathology",
+      "file": "src/app/patient/pathology/page.tsx"
+    },
+    {
+      "url": "/patient/pharmacy",
+      "file": "src/app/patient/pharmacy/page.tsx"
+    },
+    {
+      "url": "/patient/profile",
+      "file": "src/app/patient/profile/page.tsx"
+    },
+    {
+      "url": "/patient/queue",
+      "file": "src/app/patient/queue/page.tsx"
+    },
+    {
+      "url": "/patient/radiology",
+      "file": "src/app/patient/radiology/page.tsx"
+    },
+    {
+      "url": "/patient/records",
+      "file": "src/app/patient/records/page.tsx"
+    },
+    {
+      "url": "/patient/teleconsult",
+      "file": "src/app/patient/teleconsult/page.tsx"
+    },
+    {
+      "url": "/patient/waiting",
+      "file": "src/app/patient/waiting/page.tsx"
+    },
+    {
+      "url": "/pharmacy/dashboard",
+      "file": "src/app/pharmacy/dashboard/page.tsx"
+    },
+    {
+      "url": "/pharmacy/inventory",
+      "file": "src/app/pharmacy/inventory/page.tsx"
+    },
+    {
+      "url": "/pharmacy/master",
+      "file": "src/app/pharmacy/master/page.tsx"
+    },
+    {
+      "url": "/pharmacy/messages",
+      "file": "src/app/pharmacy/messages/page.tsx"
+    },
+    {
+      "url": "/pharmacy/narcotics",
+      "file": "src/app/pharmacy/narcotics/page.tsx"
+    },
+    {
+      "url": "/pharmacy/queue",
+      "file": "src/app/pharmacy/queue/page.tsx"
+    },
+    {
+      "url": "/quality/dashboard",
+      "file": "src/app/quality/dashboard/page.tsx"
+    },
+    {
+      "url": "/quality/incidents",
+      "file": "src/app/quality/incidents/page.tsx"
+    },
+    {
+      "url": "/quality/nabh",
+      "file": "src/app/quality/nabh/page.tsx"
+    },
+    {
+      "url": "/radiology/bench",
+      "file": "src/app/radiology/bench/page.tsx"
+    },
+    {
+      "url": "/radiology/dashboard",
+      "file": "src/app/radiology/dashboard/page.tsx"
+    },
+    {
+      "url": "/radiology/inbox",
+      "file": "src/app/radiology/inbox/page.tsx"
+    },
+    {
+      "url": "/radiology/reading",
+      "file": "src/app/radiology/reading/page.tsx"
+    },
+    {
+      "url": "/radiology/scans",
+      "file": "src/app/radiology/scans/page.tsx"
+    },
+    {
+      "url": "/radiology/templates",
+      "file": "src/app/radiology/templates/page.tsx"
+    },
+    {
+      "url": "/radiology/verification",
+      "file": "src/app/radiology/verification/page.tsx"
+    },
+    {
+      "url": "/radiology/viewer",
+      "file": "src/app/radiology/viewer/page.tsx"
+    },
+    {
+      "url": "/reception/ambulance",
+      "file": "src/app/reception/ambulance/page.tsx"
+    },
+    {
+      "url": "/reception/appointments",
+      "file": "src/app/reception/appointments/page.tsx"
+    },
+    {
+      "url": "/reception/beds",
+      "file": "src/app/reception/beds/page.tsx"
+    },
+    {
+      "url": "/reception/billing",
+      "file": "src/app/reception/billing/page.tsx"
+    },
+    {
+      "url": "/reception/dashboard",
+      "file": "src/app/reception/dashboard/page.tsx"
+    },
+    {
+      "url": "/reception/diagnostics",
+      "file": "src/app/reception/diagnostics/page.tsx"
+    },
+    {
+      "url": "/reception/downloads",
+      "file": "src/app/reception/downloads/page.tsx"
+    },
+    {
+      "url": "/reception/messages",
+      "file": "src/app/reception/messages/page.tsx"
+    },
+    {
+      "url": "/reception/opd",
+      "file": "src/app/reception/opd/page.tsx"
+    },
+    {
+      "url": "/reception/patients",
+      "file": "src/app/reception/patients/page.tsx"
+    },
+    {
+      "url": "/reception/queue",
+      "file": "src/app/reception/queue/page.tsx"
+    },
+    {
+      "url": "/reception/reports",
+      "file": "src/app/reception/reports/page.tsx"
+    },
+    {
+      "url": "/reception/setup",
+      "file": "src/app/reception/setup/page.tsx"
+    },
+    {
+      "url": "/reception/tpa",
+      "file": "src/app/reception/tpa/page.tsx"
+    }
+  ],
+  "pages": {
+    "/": {
+      "onClicks": 3,
+      "buttons": 2,
+      "links": 0,
+      "inputs": 0,
+      "forms": 0,
+      "submits": 0,
+      "dialogs": 0,
+      "nativeDialogs": 0,
+      "ariaLabels": [],
+      "toasts": 0,
+      "audits": 0,
+      "stores": [
+        "useAuthStore"
+      ],
+      "buttonLabels": []
+    },
+    "/admin/ai-performance": {
+      "onClicks": 0,
+      "buttons": 0,
+      "links": 0,
+      "inputs": 0,
+      "forms": 0,
+      "submits": 0,
+      "dialogs": 0,
+      "nativeDialogs": 0,
+      "ariaLabels": [],
+      "toasts": 0,
+      "audits": 0,
+      "stores": [
+        "useFeedbackStore"
+      ],
+      "buttonLabels": []
+    },
+    "/admin/analytics": {
+      "onClicks": 0,
+      "buttons": 0,
+      "links": 1,
+      "inputs": 0,
+      "forms": 0,
+      "submits": 0,
+      "dialogs": 0,
+      "nativeDialogs": 0,
+      "ariaLabels": [],
+      "toasts": 0,
+      "audits": 0,
+      "stores": [
+        "useAuditStore"
+      ],
+      "buttonLabels": []
+    },
+    "/admin/compliance": {
+      "onClicks": 0,
+      "buttons": 0,
+      "links": 6,
+      "inputs": 0,
+      "forms": 0,
+      "submits": 0,
+      "dialogs": 0,
+      "nativeDialogs": 0,
+      "ariaLabels": [],
+      "toasts": 0,
+      "audits": 0,
+      "stores": [
+        "useAuditStore",
+        "useStatutoryStore",
+        "useVendorStore",
+        "useBMWStore",
+        "useHRStore"
+      ],
+      "buttonLabels": []
+    },
+    "/admin/coverage": {
+      "onClicks": 11,
+      "buttons": 9,
+      "links": 0,
+      "inputs": 6,
+      "forms": 0,
+      "submits": 0,
+      "dialogs": 1,
+      "nativeDialogs": 0,
+      "ariaLabels": [],
+      "toasts": 5,
+      "audits": 0,
+      "stores": [
+        "useHRStore",
+        "useAuthStore"
+      ],
+      "buttonLabels": []
+    },
+    "/admin/credentials": {
+      "onClicks": 7,
+      "buttons": 5,
+      "links": 0,
+      "inputs": 2,
+      "forms": 0,
+      "submits": 0,
+      "dialogs": 1,
+      "nativeDialogs": 0,
+      "ariaLabels": [],
+      "toasts": 5,
+      "audits": 0,
+      "stores": [
+        "useHRStore",
+        "useAuthStore"
+      ],
+      "buttonLabels": []
+    },
+    "/admin/dashboard": {
+      "onClicks": 16,
+      "buttons": 17,
+      "links": 0,
+      "inputs": 0,
+      "forms": 0,
+      "submits": 0,
+      "dialogs": 0,
+      "nativeDialogs": 0,
+      "ariaLabels": [],
+      "toasts": 0,
+      "audits": 0,
+      "stores": [
+        "usePatientStore",
+        "usePharmacyStore",
+        "useLabStore",
+        "useBillingStore",
+        "useDischargeStore",
+        "useQualityStore",
+        "useAdmissionStore",
+        "useJourneyStore",
+        "useWhatsAppStore",
+        "useHRStore",
+        "useVendorStore",
+        "useStatutoryStore",
+        "useBMWStore",
+        "useAuditStore"
+      ],
+      "buttonLabels": []
+    },
+    "/admin/disha": {
+      "onClicks": 3,
+      "buttons": 3,
+      "links": 0,
+      "inputs": 1,
+      "forms": 0,
+      "submits": 0,
+      "dialogs": 1,
+      "nativeDialogs": 0,
+      "ariaLabels": [],
+      "toasts": 4,
+      "audits": 0,
+      "stores": [
+        "useAuditStore",
+        "useAuthStore"
+      ],
+      "buttonLabels": []
+    },
+    "/admin/disputes": {
+      "onClicks": 3,
+      "buttons": 3,
+      "links": 1,
+      "inputs": 1,
+      "forms": 0,
+      "submits": 0,
+      "dialogs": 0,
+      "nativeDialogs": 0,
+      "ariaLabels": [],
+      "toasts": 4,
+      "audits": 2,
+      "stores": [
+        "useBillingStore",
+        "useVendorStore",
+        "useAuthStore",
+        "useAuditStore"
+      ],
+      "buttonLabels": []
+    },
+    "/admin/doctor-activity": {
+      "onClicks": 1,
+      "buttons": 1,
+      "links": 0,
+      "inputs": 0,
+      "forms": 0,
+      "submits": 0,
+      "dialogs": 0,
+      "nativeDialogs": 0,
+      "ariaLabels": [],
+      "toasts": 0,
+      "audits": 0,
+      "stores": [
+        "useDoctorStatsStore"
+      ],
+      "buttonLabels": []
+    },
+    "/admin/duty": {
+      "onClicks": 12,
+      "buttons": 10,
+      "links": 0,
+      "inputs": 0,
+      "forms": 0,
+      "submits": 0,
+      "dialogs": 0,
+      "nativeDialogs": 0,
+      "ariaLabels": [],
+      "toasts": 7,
+      "audits": 0,
+      "stores": [
+        "useHRStore",
+        "useAuthStore"
+      ],
+      "buttonLabels": []
+    },
+    "/admin/finance": {
+      "onClicks": 0,
+      "buttons": 0,
+      "links": 3,
+      "inputs": 1,
+      "forms": 0,
+      "submits": 0,
+      "dialogs": 0,
+      "nativeDialogs": 0,
+      "ariaLabels": [],
+      "toasts": 0,
+      "audits": 0,
+      "stores": [
+        "useBillingStore",
+        "useHRStore",
+        "useVendorStore",
+        "useInsuranceStore"
+      ],
+      "buttonLabels": []
+    },
+    "/admin/hours": {
+      "onClicks": 9,
+      "buttons": 7,
+      "links": 0,
+      "inputs": 4,
+      "forms": 0,
+      "submits": 0,
+      "dialogs": 0,
+      "nativeDialogs": 0,
+      "ariaLabels": [],
+      "toasts": 6,
+      "audits": 0,
+      "stores": [
+        "useHRStore",
+        "useAuthStore"
+      ],
+      "buttonLabels": []
+    },
+    "/admin/on-call": {
+      "onClicks": 4,
+      "buttons": 4,
+      "links": 1,
+      "inputs": 0,
+      "forms": 0,
+      "submits": 0,
+      "dialogs": 0,
+      "nativeDialogs": 0,
+      "ariaLabels": [],
+      "toasts": 1,
+      "audits": 0,
+      "stores": [
+        "useHRStore",
+        "useAuthStore"
+      ],
+      "buttonLabels": []
+    },
+    "/admin/operations": {
+      "onClicks": 1,
+      "buttons": 1,
+      "links": 0,
+      "inputs": 0,
+      "forms": 0,
+      "submits": 0,
+      "dialogs": 0,
+      "nativeDialogs": 0,
+      "ariaLabels": [],
+      "toasts": 2,
+      "audits": 0,
+      "stores": [
+        "usePatientStore",
+        "useNotificationStore"
+      ],
+      "buttonLabels": []
+    },
+    "/admin/patients": {
+      "onClicks": 1,
+      "buttons": 1,
+      "links": 0,
+      "inputs": 0,
+      "forms": 0,
+      "submits": 0,
+      "dialogs": 0,
+      "nativeDialogs": 0,
+      "ariaLabels": [],
+      "toasts": 0,
+      "audits": 0,
+      "stores": [
+        "usePatientStore"
+      ],
+      "buttonLabels": []
+    },
+    "/admin/payroll": {
+      "onClicks": 2,
+      "buttons": 2,
+      "links": 0,
+      "inputs": 2,
+      "forms": 0,
+      "submits": 0,
+      "dialogs": 1,
+      "nativeDialogs": 0,
+      "ariaLabels": [],
+      "toasts": 4,
+      "audits": 1,
+      "stores": [
+        "useHRStore",
+        "useAuthStore",
+        "useAuditStore"
+      ],
+      "buttonLabels": []
+    },
+    "/admin/roster": {
+      "onClicks": 8,
+      "buttons": 8,
+      "links": 0,
+      "inputs": 2,
+      "forms": 0,
+      "submits": 0,
+      "dialogs": 0,
+      "nativeDialogs": 0,
+      "ariaLabels": [],
+      "toasts": 3,
+      "audits": 0,
+      "stores": [
+        "useHRStore",
+        "useAuthStore"
+      ],
+      "buttonLabels": []
+    },
+    "/admin/staffing": {
+      "onClicks": 1,
+      "buttons": 1,
+      "links": 0,
+      "inputs": 0,
+      "forms": 0,
+      "submits": 0,
+      "dialogs": 0,
+      "nativeDialogs": 0,
+      "ariaLabels": [],
+      "toasts": 0,
+      "audits": 0,
+      "stores": [
+        "useHRStore"
+      ],
+      "buttonLabels": []
+    },
+    "/admin/statutory": {
+      "onClicks": 3,
+      "buttons": 3,
+      "links": 0,
+      "inputs": 1,
+      "forms": 0,
+      "submits": 0,
+      "dialogs": 1,
+      "nativeDialogs": 0,
+      "ariaLabels": [],
+      "toasts": 5,
+      "audits": 0,
+      "stores": [
+        "useStatutoryStore",
+        "useAuthStore"
+      ],
+      "buttonLabels": []
+    },
+    "/admin/users": {
+      "onClicks": 8,
+      "buttons": 6,
+      "links": 0,
+      "inputs": 3,
+      "forms": 0,
+      "submits": 0,
+      "dialogs": 1,
+      "nativeDialogs": 0,
+      "ariaLabels": [],
+      "toasts": 3,
+      "audits": 0,
+      "stores": [
+        "useHRStore",
+        "useAuthStore",
+        "useNotificationStore"
+      ],
+      "buttonLabels": []
+    },
+    "/admin/vendors": {
+      "onClicks": 6,
+      "buttons": 6,
+      "links": 0,
+      "inputs": 2,
+      "forms": 0,
+      "submits": 0,
+      "dialogs": 1,
+      "nativeDialogs": 0,
+      "ariaLabels": [],
+      "toasts": 7,
+      "audits": 0,
+      "stores": [
+        "useVendorStore",
+        "useAuthStore"
+      ],
+      "buttonLabels": []
+    },
+    "/admission/beds": {
+      "onClicks": 4,
+      "buttons": 4,
+      "links": 0,
+      "inputs": 0,
+      "forms": 0,
+      "submits": 0,
+      "dialogs": 0,
+      "nativeDialogs": 0,
+      "ariaLabels": [],
+      "toasts": 2,
+      "audits": 0,
+      "stores": [
+        "useAdmissionStore",
+        "useHousekeepingStore"
+      ],
+      "buttonLabels": []
+    },
+    "/admission/dashboard": {
+      "onClicks": 5,
+      "buttons": 3,
+      "links": 1,
+      "inputs": 0,
+      "forms": 0,
+      "submits": 0,
+      "dialogs": 0,
+      "nativeDialogs": 0,
+      "ariaLabels": [],
+      "toasts": 3,
+      "audits": 0,
+      "stores": [
+        "useAdmissionStore"
+      ],
+      "buttonLabels": [
+        "Full Board"
+      ]
+    },
+    "/admission/forecast": {
+      "onClicks": 0,
+      "buttons": 0,
+      "links": 0,
+      "inputs": 0,
+      "forms": 0,
+      "submits": 0,
+      "dialogs": 0,
+      "nativeDialogs": 0,
+      "ariaLabels": [],
+      "toasts": 0,
+      "audits": 0,
+      "stores": [],
+      "buttonLabels": []
+    },
+    "/ambulance/dashboard": {
+      "onClicks": 0,
+      "buttons": 0,
+      "links": 0,
+      "inputs": 0,
+      "forms": 0,
+      "submits": 0,
+      "dialogs": 0,
+      "nativeDialogs": 0,
+      "ariaLabels": [],
+      "toasts": 0,
+      "audits": 0,
+      "stores": [
+        "useAmbulanceStore"
+      ],
+      "buttonLabels": []
+    },
+    "/ambulance/dispatch": {
+      "onClicks": 1,
+      "buttons": 1,
+      "links": 0,
+      "inputs": 5,
+      "forms": 0,
+      "submits": 0,
+      "dialogs": 0,
+      "nativeDialogs": 0,
+      "ariaLabels": [],
+      "toasts": 0,
+      "audits": 0,
+      "stores": [
+        "useAmbulanceStore"
+      ],
+      "buttonLabels": []
+    },
+    "/ambulance/log": {
+      "onClicks": 2,
+      "buttons": 2,
+      "links": 0,
+      "inputs": 0,
+      "forms": 0,
+      "submits": 0,
+      "dialogs": 0,
+      "nativeDialogs": 0,
+      "ariaLabels": [],
+      "toasts": 1,
+      "audits": 0,
+      "stores": [
+        "useAmbulanceStore"
+      ],
+      "buttonLabels": []
+    },
+    "/audit/dashboard": {
+      "onClicks": 0,
+      "buttons": 0,
+      "links": 4,
+      "inputs": 0,
+      "forms": 0,
+      "submits": 0,
+      "dialogs": 0,
+      "nativeDialogs": 0,
+      "ariaLabels": [],
+      "toasts": 0,
+      "audits": 0,
+      "stores": [
+        "useAuditStore"
+      ],
+      "buttonLabels": []
+    },
+    "/audit/log": {
+      "onClicks": 5,
+      "buttons": 5,
+      "links": 0,
+      "inputs": 1,
+      "forms": 0,
+      "submits": 0,
+      "dialogs": 0,
+      "nativeDialogs": 0,
+      "ariaLabels": [],
+      "toasts": 1,
+      "audits": 0,
+      "stores": [
+        "useAuditStore"
+      ],
+      "buttonLabels": []
+    },
+    "/audit/reports": {
+      "onClicks": 3,
+      "buttons": 3,
+      "links": 1,
+      "inputs": 0,
+      "forms": 0,
+      "submits": 0,
+      "dialogs": 0,
+      "nativeDialogs": 0,
+      "ariaLabels": [],
+      "toasts": 1,
+      "audits": 0,
+      "stores": [
+        "useAuditStore"
+      ],
+      "buttonLabels": []
+    },
+    "/billing/dashboard": {
+      "onClicks": 1,
+      "buttons": 2,
+      "links": 1,
+      "inputs": 0,
+      "forms": 0,
+      "submits": 0,
+      "dialogs": 0,
+      "nativeDialogs": 0,
+      "ariaLabels": [],
+      "toasts": 1,
+      "audits": 0,
+      "stores": [
+        "useAuthStore",
+        "useBillingStore"
+      ],
+      "buttonLabels": []
+    },
+    "/billing/discounts": {
+      "onClicks": 2,
+      "buttons": 2,
+      "links": 0,
+      "inputs": 0,
+      "forms": 0,
+      "submits": 0,
+      "dialogs": 0,
+      "nativeDialogs": 0,
+      "ariaLabels": [],
+      "toasts": 0,
+      "audits": 0,
+      "stores": [],
+      "buttonLabels": []
+    },
+    "/billing/packages": {
+      "onClicks": 0,
+      "buttons": 2,
+      "links": 0,
+      "inputs": 0,
+      "forms": 0,
+      "submits": 0,
+      "dialogs": 0,
+      "nativeDialogs": 0,
+      "ariaLabels": [],
+      "toasts": 0,
+      "audits": 0,
+      "stores": [],
+      "buttonLabels": [
+        "+ New Package"
+      ]
+    },
+    "/billing/patient/[id]": {
+      "onClicks": 10,
+      "buttons": 5,
+      "links": 0,
+      "inputs": 1,
+      "forms": 0,
+      "submits": 0,
+      "dialogs": 0,
+      "nativeDialogs": 0,
+      "ariaLabels": [],
+      "toasts": 6,
+      "audits": 0,
+      "stores": [
+        "useBillingStore"
+      ],
+      "buttonLabels": []
+    },
+    "/billing/refunds": {
+      "onClicks": 4,
+      "buttons": 4,
+      "links": 0,
+      "inputs": 0,
+      "forms": 0,
+      "submits": 0,
+      "dialogs": 1,
+      "nativeDialogs": 0,
+      "ariaLabels": [],
+      "toasts": 8,
+      "audits": 0,
+      "stores": [
+        "useAuthStore",
+        "useAuditStore"
+      ],
+      "buttonLabels": []
+    },
+    "/bloodbank/dashboard": {
+      "onClicks": 0,
+      "buttons": 0,
+      "links": 0,
+      "inputs": 0,
+      "forms": 0,
+      "submits": 0,
+      "dialogs": 0,
+      "nativeDialogs": 0,
+      "ariaLabels": [],
+      "toasts": 0,
+      "audits": 0,
+      "stores": [
+        "useBloodBankStore"
+      ],
+      "buttonLabels": []
+    },
+    "/bloodbank/donors": {
+      "onClicks": 6,
+      "buttons": 4,
+      "links": 0,
+      "inputs": 4,
+      "forms": 0,
+      "submits": 0,
+      "dialogs": 0,
+      "nativeDialogs": 0,
+      "ariaLabels": [],
+      "toasts": 2,
+      "audits": 0,
+      "stores": [],
+      "buttonLabels": []
+    },
+    "/bloodbank/inventory": {
+      "onClicks": 0,
+      "buttons": 1,
+      "links": 0,
+      "inputs": 0,
+      "forms": 0,
+      "submits": 0,
+      "dialogs": 0,
+      "nativeDialogs": 0,
+      "ariaLabels": [],
+      "toasts": 0,
+      "audits": 0,
+      "stores": [
+        "useBloodBankStore"
+      ],
+      "buttonLabels": []
+    },
+    "/bloodbank/requests": {
+      "onClicks": 6,
+      "buttons": 6,
+      "links": 0,
+      "inputs": 1,
+      "forms": 0,
+      "submits": 0,
+      "dialogs": 1,
+      "nativeDialogs": 0,
+      "ariaLabels": [],
+      "toasts": 5,
+      "audits": 0,
+      "stores": [
+        "useAuthStore",
+        "useBloodBankStore"
+      ],
+      "buttonLabels": []
+    },
+    "/bmw/dashboard": {
+      "onClicks": 0,
+      "buttons": 0,
+      "links": 0,
+      "inputs": 0,
+      "forms": 0,
+      "submits": 0,
+      "dialogs": 0,
+      "nativeDialogs": 0,
+      "ariaLabels": [],
+      "toasts": 0,
+      "audits": 0,
+      "stores": [
+        "useBMWStore"
+      ],
+      "buttonLabels": []
+    },
+    "/bmw/log": {
+      "onClicks": 5,
+      "buttons": 5,
+      "links": 0,
+      "inputs": 2,
+      "forms": 0,
+      "submits": 0,
+      "dialogs": 0,
+      "nativeDialogs": 0,
+      "ariaLabels": [],
+      "toasts": 4,
+      "audits": 0,
+      "stores": [
+        "useAuthStore",
+        "useBMWStore"
+      ],
+      "buttonLabels": []
+    },
+    "/bmw/reports": {
+      "onClicks": 2,
+      "buttons": 2,
+      "links": 0,
+      "inputs": 1,
+      "forms": 0,
+      "submits": 0,
+      "dialogs": 0,
+      "nativeDialogs": 0,
+      "ariaLabels": [],
+      "toasts": 2,
+      "audits": 0,
+      "stores": [
+        "useBMWStore"
+      ],
+      "buttonLabels": []
+    },
+    "/checkin": {
+      "onClicks": 1,
+      "buttons": 1,
+      "links": 0,
+      "inputs": 0,
+      "forms": 0,
+      "submits": 0,
+      "dialogs": 0,
+      "nativeDialogs": 0,
+      "ariaLabels": [
+        "Scan to begin check-in",
+        "Loading QR code"
+      ],
+      "toasts": 0,
+      "audits": 0,
+      "stores": [],
+      "buttonLabels": []
+    },
+    "/checkin/intake": {
+      "onClicks": 0,
+      "buttons": 0,
+      "links": 0,
+      "inputs": 0,
+      "forms": 0,
+      "submits": 0,
+      "dialogs": 0,
+      "nativeDialogs": 0,
+      "ariaLabels": [],
+      "toasts": 0,
+      "audits": 0,
+      "stores": [],
+      "buttonLabels": []
+    },
+    "/cssd/cycles": {
+      "onClicks": 9,
+      "buttons": 9,
+      "links": 0,
+      "inputs": 0,
+      "forms": 0,
+      "submits": 0,
+      "dialogs": 0,
+      "nativeDialogs": 0,
+      "ariaLabels": [],
+      "toasts": 7,
+      "audits": 0,
+      "stores": [
+        "useAuthStore",
+        "useCSSDStore"
+      ],
+      "buttonLabels": []
+    },
+    "/cssd/dashboard": {
+      "onClicks": 0,
+      "buttons": 0,
+      "links": 0,
+      "inputs": 0,
+      "forms": 0,
+      "submits": 0,
+      "dialogs": 0,
+      "nativeDialogs": 0,
+      "ariaLabels": [],
+      "toasts": 0,
+      "audits": 0,
+      "stores": [
+        "useCSSDStore"
+      ],
+      "buttonLabels": []
+    },
+    "/cssd/instruments": {
+      "onClicks": 0,
+      "buttons": 0,
+      "links": 0,
+      "inputs": 0,
+      "forms": 0,
+      "submits": 0,
+      "dialogs": 0,
+      "nativeDialogs": 0,
+      "ariaLabels": [],
+      "toasts": 0,
+      "audits": 0,
+      "stores": [
+        "useCSSDStore"
+      ],
+      "buttonLabels": []
+    },
+    "/dietary/dashboard": {
+      "onClicks": 0,
+      "buttons": 0,
+      "links": 0,
+      "inputs": 0,
+      "forms": 0,
+      "submits": 0,
+      "dialogs": 0,
+      "nativeDialogs": 0,
+      "ariaLabels": [],
+      "toasts": 0,
+      "audits": 0,
+      "stores": [
+        "useDietaryStore"
+      ],
+      "buttonLabels": []
+    },
+    "/dietary/orders": {
+      "onClicks": 2,
+      "buttons": 2,
+      "links": 0,
+      "inputs": 0,
+      "forms": 0,
+      "submits": 0,
+      "dialogs": 1,
+      "nativeDialogs": 0,
+      "ariaLabels": [],
+      "toasts": 1,
+      "audits": 0,
+      "stores": [
+        "useAuthStore",
+        "useDietaryStore"
+      ],
+      "buttonLabels": []
+    },
+    "/dietary/plans": {
+      "onClicks": 1,
+      "buttons": 1,
+      "links": 0,
+      "inputs": 0,
+      "forms": 0,
+      "submits": 0,
+      "dialogs": 0,
+      "nativeDialogs": 0,
+      "ariaLabels": [],
+      "toasts": 0,
+      "audits": 0,
+      "stores": [
+        "useAuthStore",
+        "useDietaryStore"
+      ],
+      "buttonLabels": []
+    },
+    "/discharge/dashboard": {
+      "onClicks": 11,
+      "buttons": 5,
+      "links": 0,
+      "inputs": 2,
+      "forms": 0,
+      "submits": 0,
+      "dialogs": 0,
+      "nativeDialogs": 0,
+      "ariaLabels": [],
+      "toasts": 8,
+      "audits": 0,
+      "stores": [
+        "useDischargeStore"
+      ],
+      "buttonLabels": []
+    },
+    "/discharge/summary/[id]": {
+      "onClicks": 1,
+      "buttons": 1,
+      "links": 0,
+      "inputs": 0,
+      "forms": 0,
+      "submits": 0,
+      "dialogs": 0,
+      "nativeDialogs": 0,
+      "ariaLabels": [],
+      "toasts": 2,
+      "audits": 0,
+      "stores": [],
+      "buttonLabels": []
+    },
+    "/discovery": {
+      "onClicks": 5,
+      "buttons": 6,
+      "links": 1,
+      "inputs": 1,
+      "forms": 0,
+      "submits": 0,
+      "dialogs": 0,
+      "nativeDialogs": 0,
+      "ariaLabels": [],
+      "toasts": 0,
+      "audits": 0,
+      "stores": [],
+      "buttonLabels": []
+    },
+    "/doctor/ai-assistant": {
+      "onClicks": 8,
+      "buttons": 7,
+      "links": 0,
+      "inputs": 0,
+      "forms": 0,
+      "submits": 0,
+      "dialogs": 0,
+      "nativeDialogs": 0,
+      "ariaLabels": [
+        "Delete conversation",
+        "Send"
+      ],
+      "toasts": 5,
+      "audits": 0,
+      "stores": [
+        "useAssistantStore",
+        "usePatientStore",
+        "useInpatientStore",
+        "useAuthStore",
+        "useDoctorProfileStore"
+      ],
+      "buttonLabels": []
+    },
+    "/doctor/analytics": {
+      "onClicks": 2,
+      "buttons": 2,
+      "links": 0,
+      "inputs": 2,
+      "forms": 0,
+      "submits": 0,
+      "dialogs": 0,
+      "nativeDialogs": 0,
+      "ariaLabels": [
+        "From date",
+        "To date"
+      ],
+      "toasts": 0,
+      "audits": 0,
+      "stores": [
+        "useDoctorStatsStore",
+        "useAuthStore"
+      ],
+      "buttonLabels": []
+    },
+    "/doctor/beds": {
+      "onClicks": 2,
+      "buttons": 2,
+      "links": 0,
+      "inputs": 0,
+      "forms": 0,
+      "submits": 0,
+      "dialogs": 0,
+      "nativeDialogs": 0,
+      "ariaLabels": [],
+      "toasts": 1,
+      "audits": 0,
+      "stores": [
+        "useAdmissionStore"
+      ],
+      "buttonLabels": []
+    },
+    "/doctor/consultation": {
+      "onClicks": 0,
+      "buttons": 0,
+      "links": 0,
+      "inputs": 0,
+      "forms": 0,
+      "submits": 0,
+      "dialogs": 0,
+      "nativeDialogs": 0,
+      "ariaLabels": [],
+      "toasts": 0,
+      "audits": 0,
+      "stores": [
+        "useAuthStore"
+      ],
+      "buttonLabels": []
+    },
+    "/doctor/dashboard": {
+      "onClicks": 29,
+      "buttons": 13,
+      "links": 1,
+      "inputs": 1,
+      "forms": 0,
+      "submits": 0,
+      "dialogs": 1,
+      "nativeDialogs": 0,
+      "ariaLabels": [
+        "End call"
+      ],
+      "toasts": 13,
+      "audits": 0,
+      "stores": [
+        "usePatientStore",
+        "useAuthStore",
+        "useConsultationStore",
+        "useDoctorStatsStore",
+        "usePharmacyStore",
+        "useLabStore",
+        "useLabOrdersStore",
+        "useRadiologyStore",
+        "useAdmissionStore",
+        "useDoctorProfileStore",
+        "useHRStore"
+      ],
+      "buttonLabels": [
+        "setShowAdmModal(false)}>Cancel",
+        "addMed(medSearch)} size=\"sm\">Add"
+      ]
+    },
+    "/doctor/emergencies": {
+      "onClicks": 3,
+      "buttons": 3,
+      "links": 0,
+      "inputs": 0,
+      "forms": 0,
+      "submits": 0,
+      "dialogs": 0,
+      "nativeDialogs": 0,
+      "ariaLabels": [],
+      "toasts": 0,
+      "audits": 0,
+      "stores": [
+        "useAdmissionStore",
+        "useAuthStore",
+        "useConsultationStore",
+        "usePatientStore"
+      ],
+      "buttonLabels": []
+    },
+    "/doctor/inbox": {
+      "onClicks": 6,
+      "buttons": 6,
+      "links": 0,
+      "inputs": 0,
+      "forms": 0,
+      "submits": 0,
+      "dialogs": 0,
+      "nativeDialogs": 0,
+      "ariaLabels": [
+        "Loading inbox",
+        "Mark as read"
+      ],
+      "toasts": 1,
+      "audits": 0,
+      "stores": [
+        "useMessagingStore",
+        "useNotificationStore",
+        "useLabStore",
+        "useLabOrdersStore",
+        "useRadiologyStore",
+        "useInpatientStore",
+        "useAuthStore"
+      ],
+      "buttonLabels": []
+    },
+    "/doctor/ipd": {
+      "onClicks": 1,
+      "buttons": 1,
+      "links": 0,
+      "inputs": 0,
+      "forms": 0,
+      "submits": 0,
+      "dialogs": 0,
+      "nativeDialogs": 0,
+      "ariaLabels": [
+        "Loading inpatients"
+      ],
+      "toasts": 1,
+      "audits": 0,
+      "stores": [
+        "useInpatientStore",
+        "useNotificationStore"
+      ],
+      "buttonLabels": []
+    },
+    "/doctor/ipd/[id]": {
+      "onClicks": 3,
+      "buttons": 3,
+      "links": 0,
+      "inputs": 0,
+      "forms": 0,
+      "submits": 0,
+      "dialogs": 0,
+      "nativeDialogs": 0,
+      "ariaLabels": [
+        "Loading chart"
+      ],
+      "toasts": 0,
+      "audits": 0,
+      "stores": [
+        "useInpatientStore"
+      ],
+      "buttonLabels": []
+    },
+    "/doctor/online": {
+      "onClicks": 1,
+      "buttons": 1,
+      "links": 0,
+      "inputs": 0,
+      "forms": 0,
+      "submits": 0,
+      "dialogs": 0,
+      "nativeDialogs": 0,
+      "ariaLabels": [],
+      "toasts": 0,
+      "audits": 0,
+      "stores": [
+        "usePatientStore",
+        "useAuthStore",
+        "useConsultationStore",
+        "useDoctorProfileStore"
+      ],
+      "buttonLabels": []
+    },
+    "/doctor/records": {
+      "onClicks": 5,
+      "buttons": 3,
+      "links": 0,
+      "inputs": 1,
+      "forms": 0,
+      "submits": 0,
+      "dialogs": 0,
+      "nativeDialogs": 0,
+      "ariaLabels": [
+        "Patient record",
+        "Close"
+      ],
+      "toasts": 0,
+      "audits": 0,
+      "stores": [
+        "usePatientStore",
+        "useAuthStore",
+        "useConsultationStore",
+        "useInpatientStore"
+      ],
+      "buttonLabels": []
+    },
+    "/doctor/registries": {
+      "onClicks": 3,
+      "buttons": 3,
+      "links": 0,
+      "inputs": 0,
+      "forms": 0,
+      "submits": 0,
+      "dialogs": 0,
+      "nativeDialogs": 0,
+      "ariaLabels": [],
+      "toasts": 2,
+      "audits": 0,
+      "stores": [
+        "usePatientStore",
+        "useInpatientStore"
+      ],
+      "buttonLabels": []
+    },
+    "/doctor/schedule": {
+      "onClicks": 1,
+      "buttons": 1,
+      "links": 1,
+      "inputs": 0,
+      "forms": 0,
+      "submits": 0,
+      "dialogs": 0,
+      "nativeDialogs": 0,
+      "ariaLabels": [],
+      "toasts": 0,
+      "audits": 0,
+      "stores": [
+        "usePatientStore",
+        "useAuthStore",
+        "useConsultationStore",
+        "useDoctorProfileStore"
+      ],
+      "buttonLabels": []
+    },
+    "/doctor/settings": {
+      "onClicks": 5,
+      "buttons": 2,
+      "links": 0,
+      "inputs": 5,
+      "forms": 0,
+      "submits": 0,
+      "dialogs": 0,
+      "nativeDialogs": 0,
+      "ariaLabels": [],
+      "toasts": 1,
+      "audits": 0,
+      "stores": [
+        "useDoctorProfileStore",
+        "useAuthStore"
+      ],
+      "buttonLabels": []
+    },
+    "/emergency/dashboard": {
+      "onClicks": 4,
+      "buttons": 4,
+      "links": 5,
+      "inputs": 1,
+      "forms": 0,
+      "submits": 0,
+      "dialogs": 0,
+      "nativeDialogs": 0,
+      "ariaLabels": [],
+      "toasts": 1,
+      "audits": 0,
+      "stores": [
+        "useERStore",
+        "useAuthStore"
+      ],
+      "buttonLabels": []
+    },
+    "/emergency/floor": {
+      "onClicks": 9,
+      "buttons": 9,
+      "links": 0,
+      "inputs": 2,
+      "forms": 0,
+      "submits": 0,
+      "dialogs": 0,
+      "nativeDialogs": 0,
+      "ariaLabels": [],
+      "toasts": 5,
+      "audits": 0,
+      "stores": [
+        "useERStore",
+        "useAuthStore"
+      ],
+      "buttonLabels": [
+        "Save vitals"
+      ]
+    },
+    "/emergency/triage": {
+      "onClicks": 8,
+      "buttons": 8,
+      "links": 0,
+      "inputs": 6,
+      "forms": 0,
+      "submits": 0,
+      "dialogs": 0,
+      "nativeDialogs": 0,
+      "ariaLabels": [],
+      "toasts": 5,
+      "audits": 0,
+      "stores": [
+        "useERStore"
+      ],
+      "buttonLabels": [
+        "Add to triage queue"
+      ]
+    },
+    "/family-track/[token]": {
+      "onClicks": 4,
+      "buttons": 4,
+      "links": 0,
+      "inputs": 0,
+      "forms": 0,
+      "submits": 0,
+      "dialogs": 0,
+      "nativeDialogs": 0,
+      "ariaLabels": [],
+      "toasts": 0,
+      "audits": 0,
+      "stores": [
+        "usePatientStore",
+        "useAuditStore",
+        "useCameraStore"
+      ],
+      "buttonLabels": []
+    },
+    "/housekeeping/dashboard": {
+      "onClicks": 4,
+      "buttons": 1,
+      "links": 0,
+      "inputs": 0,
+      "forms": 0,
+      "submits": 0,
+      "dialogs": 0,
+      "nativeDialogs": 0,
+      "ariaLabels": [],
+      "toasts": 4,
+      "audits": 0,
+      "stores": [
+        "useHousekeepingStore",
+        "useAdmissionStore"
+      ],
+      "buttonLabels": []
+    },
+    "/insurance/claims": {
+      "onClicks": 12,
+      "buttons": 10,
+      "links": 0,
+      "inputs": 0,
+      "forms": 0,
+      "submits": 0,
+      "dialogs": 0,
+      "nativeDialogs": 0,
+      "ariaLabels": [
+        "Close"
+      ],
+      "toasts": 4,
+      "audits": 0,
+      "stores": [
+        "useInsuranceStore"
+      ],
+      "buttonLabels": []
+    },
+    "/insurance/dashboard": {
+      "onClicks": 2,
+      "buttons": 3,
+      "links": 0,
+      "inputs": 2,
+      "forms": 0,
+      "submits": 0,
+      "dialogs": 0,
+      "nativeDialogs": 0,
+      "ariaLabels": [],
+      "toasts": 0,
+      "audits": 0,
+      "stores": [
+        "useInsuranceStore"
+      ],
+      "buttonLabels": []
+    },
+    "/insurance/documents": {
+      "onClicks": 2,
+      "buttons": 2,
+      "links": 0,
+      "inputs": 0,
+      "forms": 0,
+      "submits": 0,
+      "dialogs": 0,
+      "nativeDialogs": 0,
+      "ariaLabels": [],
+      "toasts": 2,
+      "audits": 0,
+      "stores": [],
+      "buttonLabels": []
+    },
+    "/insurance/preauth": {
+      "onClicks": 1,
+      "buttons": 1,
+      "links": 0,
+      "inputs": 0,
+      "forms": 0,
+      "submits": 0,
+      "dialogs": 0,
+      "nativeDialogs": 0,
+      "ariaLabels": [],
+      "toasts": 2,
+      "audits": 0,
+      "stores": [],
+      "buttonLabels": []
+    },
+    "/inventory/dashboard": {
+      "onClicks": 0,
+      "buttons": 2,
+      "links": 0,
+      "inputs": 1,
+      "forms": 0,
+      "submits": 0,
+      "dialogs": 0,
+      "nativeDialogs": 0,
+      "ariaLabels": [],
+      "toasts": 0,
+      "audits": 0,
+      "stores": [
+        "useInventoryStore"
+      ],
+      "buttonLabels": []
+    },
+    "/inventory/requests": {
+      "onClicks": 4,
+      "buttons": 4,
+      "links": 0,
+      "inputs": 0,
+      "forms": 0,
+      "submits": 0,
+      "dialogs": 0,
+      "nativeDialogs": 0,
+      "ariaLabels": [],
+      "toasts": 2,
+      "audits": 0,
+      "stores": [
+        "usePharmacyInventoryStore"
+      ],
+      "buttonLabels": []
+    },
+    "/inventory/stock": {
+      "onClicks": 8,
+      "buttons": 6,
+      "links": 0,
+      "inputs": 2,
+      "forms": 0,
+      "submits": 0,
+      "dialogs": 0,
+      "nativeDialogs": 0,
+      "ariaLabels": [
+        "Close",
+        "Search assets"
+      ],
+      "toasts": 2,
+      "audits": 0,
+      "stores": [
+        "useInventoryStore"
+      ],
+      "buttonLabels": [
+        "Cancel",
+        "Schedule"
+      ]
+    },
+    "/lab/benches": {
+      "onClicks": 18,
+      "buttons": 13,
+      "links": 0,
+      "inputs": 2,
+      "forms": 0,
+      "submits": 0,
+      "dialogs": 0,
+      "nativeDialogs": 0,
+      "ariaLabels": [],
+      "toasts": 7,
+      "audits": 0,
+      "stores": [
+        "useLabOrdersStore",
+        "useLabQCStore",
+        "useAuthStore"
+      ],
+      "buttonLabels": [
+        "Confirm override",
+        "Cancel",
+        "Confirm reject",
+        "Cancel",
+        "Return to bench"
+      ]
+    },
+    "/lab/dashboard": {
+      "onClicks": 3,
+      "buttons": 3,
+      "links": 6,
+      "inputs": 1,
+      "forms": 0,
+      "submits": 0,
+      "dialogs": 0,
+      "nativeDialogs": 0,
+      "ariaLabels": [],
+      "toasts": 1,
+      "audits": 0,
+      "stores": [
+        "useLabOrdersStore",
+        "useLabQCStore",
+        "useAuthStore"
+      ],
+      "buttonLabels": []
+    },
+    "/lab/inbox": {
+      "onClicks": 12,
+      "buttons": 12,
+      "links": 0,
+      "inputs": 0,
+      "forms": 0,
+      "submits": 0,
+      "dialogs": 0,
+      "nativeDialogs": 0,
+      "ariaLabels": [],
+      "toasts": 2,
+      "audits": 0,
+      "stores": [
+        "useLabOrdersStore",
+        "useAuthStore"
+      ],
+      "buttonLabels": [
+        "Confirm reject",
+        "Cancel"
+      ]
+    },
+    "/lab/microbiology": {
+      "onClicks": 8,
+      "buttons": 8,
+      "links": 0,
+      "inputs": 1,
+      "forms": 0,
+      "submits": 0,
+      "dialogs": 0,
+      "nativeDialogs": 0,
+      "ariaLabels": [],
+      "toasts": 1,
+      "audits": 0,
+      "stores": [
+        "useLabOrdersStore",
+        "useAuthStore"
+      ],
+      "buttonLabels": []
+    },
+    "/lab/qc": {
+      "onClicks": 4,
+      "buttons": 4,
+      "links": 0,
+      "inputs": 1,
+      "forms": 0,
+      "submits": 0,
+      "dialogs": 0,
+      "nativeDialogs": 0,
+      "ariaLabels": [],
+      "toasts": 3,
+      "audits": 0,
+      "stores": [
+        "useLabQCStore",
+        "useAuthStore"
+      ],
+      "buttonLabels": []
+    },
+    "/lab/reflex": {
+      "onClicks": 2,
+      "buttons": 2,
+      "links": 0,
+      "inputs": 0,
+      "forms": 0,
+      "submits": 0,
+      "dialogs": 0,
+      "nativeDialogs": 0,
+      "ariaLabels": [
+        "Dismiss suggestion"
+      ],
+      "toasts": 1,
+      "audits": 0,
+      "stores": [
+        "useLabOrdersStore"
+      ],
+      "buttonLabels": []
+    },
+    "/mortuary/clearances": {
+      "onClicks": 3,
+      "buttons": 3,
+      "links": 0,
+      "inputs": 0,
+      "forms": 0,
+      "submits": 0,
+      "dialogs": 1,
+      "nativeDialogs": 0,
+      "ariaLabels": [],
+      "toasts": 3,
+      "audits": 0,
+      "stores": [
+        "useAuthStore",
+        "useMortuaryStore"
+      ],
+      "buttonLabels": []
+    },
+    "/mortuary/dashboard": {
+      "onClicks": 0,
+      "buttons": 0,
+      "links": 0,
+      "inputs": 0,
+      "forms": 0,
+      "submits": 0,
+      "dialogs": 0,
+      "nativeDialogs": 0,
+      "ariaLabels": [],
+      "toasts": 0,
+      "audits": 0,
+      "stores": [
+        "useMortuaryStore"
+      ],
+      "buttonLabels": []
+    },
+    "/mortuary/records": {
+      "onClicks": 0,
+      "buttons": 0,
+      "links": 0,
+      "inputs": 0,
+      "forms": 0,
+      "submits": 0,
+      "dialogs": 0,
+      "nativeDialogs": 0,
+      "ariaLabels": [],
+      "toasts": 0,
+      "audits": 0,
+      "stores": [
+        "useMortuaryStore"
+      ],
+      "buttonLabels": []
+    },
+    "/nurse/ai-assistant": {
+      "onClicks": 2,
+      "buttons": 2,
+      "links": 0,
+      "inputs": 0,
+      "forms": 0,
+      "submits": 0,
+      "dialogs": 0,
+      "nativeDialogs": 0,
+      "ariaLabels": [
+        "Send"
+      ],
+      "toasts": 0,
+      "audits": 0,
+      "stores": [
+        "useInpatientStore",
+        "useShiftStore"
+      ],
+      "buttonLabels": []
+    },
+    "/nurse/dashboard": {
+      "onClicks": 8,
+      "buttons": 8,
+      "links": 1,
+      "inputs": 0,
+      "forms": 0,
+      "submits": 0,
+      "dialogs": 0,
+      "nativeDialogs": 0,
+      "ariaLabels": [],
+      "toasts": 9,
+      "audits": 0,
+      "stores": [
+        "useInpatientStore",
+        "usePatientProfileStore",
+        "useDischargeStore",
+        "useAdmissionStore",
+        "useCameraStore",
+        "useAuditStore",
+        "useAuthStore",
+        "useHRStore"
+      ],
+      "buttonLabels": []
+    },
+    "/nurse/fluid-balance": {
+      "onClicks": 7,
+      "buttons": 7,
+      "links": 0,
+      "inputs": 1,
+      "forms": 0,
+      "submits": 0,
+      "dialogs": 0,
+      "nativeDialogs": 0,
+      "ariaLabels": [
+        "Pause infusion",
+        "Resume infusion",
+        "Complete infusion"
+      ],
+      "toasts": 1,
+      "audits": 0,
+      "stores": [
+        "useInpatientStore",
+        "useShiftStore"
+      ],
+      "buttonLabels": [
+        "Add"
+      ]
+    },
+    "/nurse/handover": {
+      "onClicks": 3,
+      "buttons": 3,
+      "links": 0,
+      "inputs": 0,
+      "forms": 0,
+      "submits": 0,
+      "dialogs": 0,
+      "nativeDialogs": 0,
+      "ariaLabels": [],
+      "toasts": 2,
+      "audits": 0,
+      "stores": [
+        "useInpatientStore",
+        "useShiftStore",
+        "useAuditStore"
+      ],
+      "buttonLabels": []
+    },
+    "/nurse/medication": {
+      "onClicks": 3,
+      "buttons": 3,
+      "links": 0,
+      "inputs": 0,
+      "forms": 0,
+      "submits": 0,
+      "dialogs": 0,
+      "nativeDialogs": 0,
+      "ariaLabels": [],
+      "toasts": 2,
+      "audits": 0,
+      "stores": [
+        "usePharmacyStore",
+        "useInpatientStore",
+        "useShiftStore"
+      ],
+      "buttonLabels": []
+    },
+    "/nurse/messages": {
+      "onClicks": 0,
+      "buttons": 0,
+      "links": 0,
+      "inputs": 0,
+      "forms": 0,
+      "submits": 0,
+      "dialogs": 0,
+      "nativeDialogs": 0,
+      "ariaLabels": [
+        "Loading"
+      ],
+      "toasts": 0,
+      "audits": 0,
+      "stores": [
+        "useAuthStore"
+      ],
+      "buttonLabels": []
+    },
+    "/nurse/orders": {
+      "onClicks": 1,
+      "buttons": 1,
+      "links": 0,
+      "inputs": 0,
+      "forms": 0,
+      "submits": 0,
+      "dialogs": 0,
+      "nativeDialogs": 0,
+      "ariaLabels": [],
+      "toasts": 1,
+      "audits": 0,
+      "stores": [
+        "useInpatientStore",
+        "useShiftStore",
+        "useNotificationStore"
+      ],
+      "buttonLabels": []
+    },
+    "/nurse/patients": {
+      "onClicks": 0,
+      "buttons": 0,
+      "links": 1,
+      "inputs": 0,
+      "forms": 0,
+      "submits": 0,
+      "dialogs": 0,
+      "nativeDialogs": 0,
+      "ariaLabels": [],
+      "toasts": 0,
+      "audits": 0,
+      "stores": [
+        "useShiftStore"
+      ],
+      "buttonLabels": []
+    },
+    "/nurse/patients/[id]": {
+      "onClicks": 0,
+      "buttons": 0,
+      "links": 2,
+      "inputs": 0,
+      "forms": 0,
+      "submits": 0,
+      "dialogs": 0,
+      "nativeDialogs": 0,
+      "ariaLabels": [],
+      "toasts": 0,
+      "audits": 0,
+      "stores": [
+        "useInpatientStore",
+        "useNursingStore"
+      ],
+      "buttonLabels": []
+    },
+    "/nurse/rounds": {
+      "onClicks": 18,
+      "buttons": 17,
+      "links": 0,
+      "inputs": 3,
+      "forms": 0,
+      "submits": 0,
+      "dialogs": 0,
+      "nativeDialogs": 0,
+      "ariaLabels": [],
+      "toasts": 1,
+      "audits": 0,
+      "stores": [
+        "useWardStore"
+      ],
+      "buttonLabels": [
+        "Cancel",
+        "Cancel",
+        "Cancel"
+      ]
+    },
+    "/nurse/tasks": {
+      "onClicks": 7,
+      "buttons": 7,
+      "links": 0,
+      "inputs": 0,
+      "forms": 0,
+      "submits": 0,
+      "dialogs": 0,
+      "nativeDialogs": 0,
+      "ariaLabels": [],
+      "toasts": 4,
+      "audits": 0,
+      "stores": [
+        "useNursingStore",
+        "useInpatientStore"
+      ],
+      "buttonLabels": []
+    },
+    "/nurse/vitals-requests": {
+      "onClicks": 1,
+      "buttons": 1,
+      "links": 0,
+      "inputs": 0,
+      "forms": 0,
+      "submits": 0,
+      "dialogs": 0,
+      "nativeDialogs": 0,
+      "ariaLabels": [],
+      "toasts": 4,
+      "audits": 0,
+      "stores": [
+        "usePatientStore",
+        "usePatientProfileStore"
+      ],
+      "buttonLabels": []
+    },
+    "/ot/checklist": {
+      "onClicks": 11,
+      "buttons": 11,
+      "links": 0,
+      "inputs": 4,
+      "forms": 0,
+      "submits": 0,
+      "dialogs": 0,
+      "nativeDialogs": 0,
+      "ariaLabels": [],
+      "toasts": 7,
+      "audits": 0,
+      "stores": [
+        "useOTStore"
+      ],
+      "buttonLabels": [
+        "Log"
+      ]
+    },
+    "/ot/dashboard": {
+      "onClicks": 3,
+      "buttons": 6,
+      "links": 3,
+      "inputs": 1,
+      "forms": 0,
+      "submits": 0,
+      "dialogs": 0,
+      "nativeDialogs": 0,
+      "ariaLabels": [],
+      "toasts": 3,
+      "audits": 0,
+      "stores": [
+        "useOTStore"
+      ],
+      "buttonLabels": [
+        "Review"
+      ]
+    },
+    "/ot/schedule": {
+      "onClicks": 3,
+      "buttons": 0,
+      "links": 0,
+      "inputs": 7,
+      "forms": 0,
+      "submits": 0,
+      "dialogs": 0,
+      "nativeDialogs": 0,
+      "ariaLabels": [],
+      "toasts": 2,
+      "audits": 0,
+      "stores": [
+        "useOTStore"
+      ],
+      "buttonLabels": [
+        "Schedule Procedure",
+        "setShowForm(false)}>Cancel"
+      ]
+    },
+    "/patient/ai-care": {
+      "onClicks": 3,
+      "buttons": 4,
+      "links": 0,
+      "inputs": 1,
+      "forms": 0,
+      "submits": 0,
+      "dialogs": 0,
+      "nativeDialogs": 0,
+      "ariaLabels": [
+        "Ask the AI health companion",
+        "Speak",
+        "Send"
+      ],
+      "toasts": 0,
+      "audits": 0,
+      "stores": [],
+      "buttonLabels": []
+    },
+    "/patient/ambulance": {
+      "onClicks": 2,
+      "buttons": 2,
+      "links": 1,
+      "inputs": 2,
+      "forms": 0,
+      "submits": 0,
+      "dialogs": 0,
+      "nativeDialogs": 0,
+      "ariaLabels": [],
+      "toasts": 0,
+      "audits": 0,
+      "stores": [],
+      "buttonLabels": []
+    },
+    "/patient/appointments": {
+      "onClicks": 12,
+      "buttons": 9,
+      "links": 0,
+      "inputs": 0,
+      "forms": 0,
+      "submits": 0,
+      "dialogs": 0,
+      "nativeDialogs": 0,
+      "ariaLabels": [],
+      "toasts": 2,
+      "audits": 0,
+      "stores": [
+        "usePatientStore"
+      ],
+      "buttonLabels": []
+    },
+    "/patient/assistant": {
+      "onClicks": 2,
+      "buttons": 3,
+      "links": 0,
+      "inputs": 1,
+      "forms": 0,
+      "submits": 0,
+      "dialogs": 0,
+      "nativeDialogs": 0,
+      "ariaLabels": [
+        "Ask the AI health assistant",
+        "Speak",
+        "Send"
+      ],
+      "toasts": 0,
+      "audits": 0,
+      "stores": [],
+      "buttonLabels": []
+    },
+    "/patient/billing": {
+      "onClicks": 2,
+      "buttons": 2,
+      "links": 1,
+      "inputs": 0,
+      "forms": 0,
+      "submits": 0,
+      "dialogs": 0,
+      "nativeDialogs": 0,
+      "ariaLabels": [],
+      "toasts": 2,
+      "audits": 0,
+      "stores": [
+        "useAuthStore",
+        "usePatientOrdersStore"
+      ],
+      "buttonLabels": []
+    },
+    "/patient/blood-bank": {
+      "onClicks": 1,
+      "buttons": 1,
+      "links": 0,
+      "inputs": 0,
+      "forms": 0,
+      "submits": 0,
+      "dialogs": 0,
+      "nativeDialogs": 0,
+      "ariaLabels": [],
+      "toasts": 0,
+      "audits": 0,
+      "stores": [
+        "useAuthStore",
+        "useBloodBankStore"
+      ],
+      "buttonLabels": []
+    },
+    "/patient/consultations": {
+      "onClicks": 11,
+      "buttons": 11,
+      "links": 0,
+      "inputs": 0,
+      "forms": 0,
+      "submits": 0,
+      "dialogs": 0,
+      "nativeDialogs": 0,
+      "ariaLabels": [
+        "Close booking"
+      ],
+      "toasts": 0,
+      "audits": 0,
+      "stores": [],
+      "buttonLabels": []
+    },
+    "/patient/dashboard": {
+      "onClicks": 0,
+      "buttons": 0,
+      "links": 0,
+      "inputs": 0,
+      "forms": 0,
+      "submits": 0,
+      "dialogs": 0,
+      "nativeDialogs": 0,
+      "ariaLabels": [],
+      "toasts": 2,
+      "audits": 0,
+      "stores": [
+        "useAuthStore",
+        "usePatientLiveStore",
+        "usePatientOrdersStore"
+      ],
+      "buttonLabels": []
+    },
+    "/patient/discharge": {
+      "onClicks": 1,
+      "buttons": 1,
+      "links": 0,
+      "inputs": 0,
+      "forms": 0,
+      "submits": 0,
+      "dialogs": 0,
+      "nativeDialogs": 0,
+      "ariaLabels": [],
+      "toasts": 1,
+      "audits": 0,
+      "stores": [
+        "useDischargeStore",
+        "useAuthStore"
+      ],
+      "buttonLabels": []
+    },
+    "/patient/downloads": {
+      "onClicks": 3,
+      "buttons": 3,
+      "links": 0,
+      "inputs": 1,
+      "forms": 0,
+      "submits": 0,
+      "dialogs": 0,
+      "nativeDialogs": 0,
+      "ariaLabels": [],
+      "toasts": 2,
+      "audits": 0,
+      "stores": [],
+      "buttonLabels": []
+    },
+    "/patient/emergency": {
+      "onClicks": 0,
+      "buttons": 0,
+      "links": 2,
+      "inputs": 0,
+      "forms": 0,
+      "submits": 0,
+      "dialogs": 0,
+      "nativeDialogs": 0,
+      "ariaLabels": [],
+      "toasts": 0,
+      "audits": 0,
+      "stores": [
+        "useAuthStore",
+        "useERStore"
+      ],
+      "buttonLabels": []
+    },
+    "/patient/family-track/[token]": {
+      "onClicks": 4,
+      "buttons": 4,
+      "links": 0,
+      "inputs": 0,
+      "forms": 0,
+      "submits": 0,
+      "dialogs": 0,
+      "nativeDialogs": 0,
+      "ariaLabels": [],
+      "toasts": 0,
+      "audits": 0,
+      "stores": [
+        "usePatientStore",
+        "useAuditStore",
+        "useCameraStore"
+      ],
+      "buttonLabels": []
+    },
+    "/patient/followup": {
+      "onClicks": 2,
+      "buttons": 2,
+      "links": 4,
+      "inputs": 1,
+      "forms": 0,
+      "submits": 0,
+      "dialogs": 0,
+      "nativeDialogs": 0,
+      "ariaLabels": [],
+      "toasts": 2,
+      "audits": 0,
+      "stores": [
+        "useAuthStore",
+        "usePatientLiveStore",
+        "usePatientOrdersStore"
+      ],
+      "buttonLabels": []
+    },
+    "/patient/health-story": {
+      "onClicks": 0,
+      "buttons": 0,
+      "links": 0,
+      "inputs": 0,
+      "forms": 0,
+      "submits": 0,
+      "dialogs": 0,
+      "nativeDialogs": 0,
+      "ariaLabels": [],
+      "toasts": 0,
+      "audits": 0,
+      "stores": [],
+      "buttonLabels": []
+    },
+    "/patient/help": {
+      "onClicks": 1,
+      "buttons": 2,
+      "links": 1,
+      "inputs": 0,
+      "forms": 0,
+      "submits": 0,
+      "dialogs": 0,
+      "nativeDialogs": 0,
+      "ariaLabels": [],
+      "toasts": 0,
+      "audits": 0,
+      "stores": [],
+      "buttonLabels": []
+    },
+    "/patient/insurance": {
+      "onClicks": 2,
+      "buttons": 2,
+      "links": 0,
+      "inputs": 0,
+      "forms": 0,
+      "submits": 0,
+      "dialogs": 0,
+      "nativeDialogs": 0,
+      "ariaLabels": [],
+      "toasts": 2,
+      "audits": 0,
+      "stores": [
+        "useInsuranceStore",
+        "useAuthStore"
+      ],
+      "buttonLabels": []
+    },
+    "/patient/ipd": {
+      "onClicks": 1,
+      "buttons": 1,
+      "links": 1,
+      "inputs": 0,
+      "forms": 0,
+      "submits": 0,
+      "dialogs": 0,
+      "nativeDialogs": 0,
+      "ariaLabels": [
+        "Loading"
+      ],
+      "toasts": 0,
+      "audits": 0,
+      "stores": [
+        "useAuthStore",
+        "useInpatientStore"
+      ],
+      "buttonLabels": []
+    },
+    "/patient/medications": {
+      "onClicks": 0,
+      "buttons": 1,
+      "links": 0,
+      "inputs": 0,
+      "forms": 0,
+      "submits": 0,
+      "dialogs": 0,
+      "nativeDialogs": 0,
+      "ariaLabels": [],
+      "toasts": 0,
+      "audits": 0,
+      "stores": [],
+      "buttonLabels": []
+    },
+    "/patient/orders": {
+      "onClicks": 8,
+      "buttons": 8,
+      "links": 0,
+      "inputs": 0,
+      "forms": 0,
+      "submits": 0,
+      "dialogs": 0,
+      "nativeDialogs": 0,
+      "ariaLabels": [
+        "Reduce",
+        "Increase"
+      ],
+      "toasts": 3,
+      "audits": 0,
+      "stores": [
+        "usePatientOrdersStore"
+      ],
+      "buttonLabels": []
+    },
+    "/patient/pathology": {
+      "onClicks": 1,
+      "buttons": 1,
+      "links": 0,
+      "inputs": 0,
+      "forms": 0,
+      "submits": 0,
+      "dialogs": 0,
+      "nativeDialogs": 0,
+      "ariaLabels": [],
+      "toasts": 1,
+      "audits": 0,
+      "stores": [
+        "useLabOrdersStore",
+        "useAuthStore"
+      ],
+      "buttonLabels": []
+    },
+    "/patient/pharmacy": {
+      "onClicks": 1,
+      "buttons": 1,
+      "links": 0,
+      "inputs": 0,
+      "forms": 0,
+      "submits": 0,
+      "dialogs": 0,
+      "nativeDialogs": 0,
+      "ariaLabels": [],
+      "toasts": 0,
+      "audits": 0,
+      "stores": [
+        "usePharmacyStore",
+        "useAuthStore"
+      ],
+      "buttonLabels": []
+    },
+    "/patient/profile": {
+      "onClicks": 0,
+      "buttons": 0,
+      "links": 0,
+      "inputs": 0,
+      "forms": 0,
+      "submits": 0,
+      "dialogs": 0,
+      "nativeDialogs": 0,
+      "ariaLabels": [],
+      "toasts": 0,
+      "audits": 0,
+      "stores": [
+        "useAuthStore",
+        "usePatientStore",
+        "usePatientProfileStore"
+      ],
+      "buttonLabels": []
+    },
+    "/patient/queue": {
+      "onClicks": 0,
+      "buttons": 0,
+      "links": 0,
+      "inputs": 0,
+      "forms": 0,
+      "submits": 0,
+      "dialogs": 0,
+      "nativeDialogs": 0,
+      "ariaLabels": [],
+      "toasts": 0,
+      "audits": 0,
+      "stores": [
+        "usePatientStore"
+      ],
+      "buttonLabels": []
+    },
+    "/patient/radiology": {
+      "onClicks": 1,
+      "buttons": 1,
+      "links": 0,
+      "inputs": 0,
+      "forms": 0,
+      "submits": 0,
+      "dialogs": 0,
+      "nativeDialogs": 0,
+      "ariaLabels": [],
+      "toasts": 1,
+      "audits": 0,
+      "stores": [
+        "useRadiologyStudiesStore",
+        "useAuthStore"
+      ],
+      "buttonLabels": []
+    },
+    "/patient/records": {
+      "onClicks": 1,
+      "buttons": 2,
+      "links": 0,
+      "inputs": 0,
+      "forms": 0,
+      "submits": 0,
+      "dialogs": 0,
+      "nativeDialogs": 0,
+      "ariaLabels": [],
+      "toasts": 0,
+      "audits": 0,
+      "stores": [
+        "usePatientStore",
+        "useFollowupStore"
+      ],
+      "buttonLabels": []
+    },
+    "/patient/teleconsult": {
+      "onClicks": 7,
+      "buttons": 8,
+      "links": 0,
+      "inputs": 0,
+      "forms": 0,
+      "submits": 0,
+      "dialogs": 0,
+      "nativeDialogs": 0,
+      "ariaLabels": [],
+      "toasts": 0,
+      "audits": 0,
+      "stores": [
+        "useAuthStore",
+        "usePatientStore",
+        "usePatientLiveStore"
+      ],
+      "buttonLabels": []
+    },
+    "/patient/waiting": {
+      "onClicks": 2,
+      "buttons": 3,
+      "links": 0,
+      "inputs": 0,
+      "forms": 0,
+      "submits": 0,
+      "dialogs": 0,
+      "nativeDialogs": 0,
+      "ariaLabels": [],
+      "toasts": 0,
+      "audits": 0,
+      "stores": [
+        "usePatientStore",
+        "useAuthStore",
+        "useDischargeStore"
+      ],
+      "buttonLabels": []
+    },
+    "/pharmacy/dashboard": {
+      "onClicks": 0,
+      "buttons": 0,
+      "links": 5,
+      "inputs": 0,
+      "forms": 0,
+      "submits": 0,
+      "dialogs": 0,
+      "nativeDialogs": 0,
+      "ariaLabels": [],
+      "toasts": 0,
+      "audits": 0,
+      "stores": [
+        "usePharmacyStore",
+        "usePharmacyInventoryStore"
+      ],
+      "buttonLabels": []
+    },
+    "/pharmacy/inventory": {
+      "onClicks": 1,
+      "buttons": 1,
+      "links": 0,
+      "inputs": 0,
+      "forms": 0,
+      "submits": 0,
+      "dialogs": 0,
+      "nativeDialogs": 0,
+      "ariaLabels": [],
+      "toasts": 1,
+      "audits": 0,
+      "stores": [
+        "usePharmacyInventoryStore",
+        "useAuthStore"
+      ],
+      "buttonLabels": []
+    },
+    "/pharmacy/master": {
+      "onClicks": 1,
+      "buttons": 1,
+      "links": 0,
+      "inputs": 1,
+      "forms": 0,
+      "submits": 0,
+      "dialogs": 0,
+      "nativeDialogs": 0,
+      "ariaLabels": [],
+      "toasts": 1,
+      "audits": 0,
+      "stores": [
+        "useDrugMasterStore"
+      ],
+      "buttonLabels": []
+    },
+    "/pharmacy/messages": {
+      "onClicks": 0,
+      "buttons": 0,
+      "links": 0,
+      "inputs": 0,
+      "forms": 0,
+      "submits": 0,
+      "dialogs": 0,
+      "nativeDialogs": 0,
+      "ariaLabels": [],
+      "toasts": 0,
+      "audits": 0,
+      "stores": [
+        "useAuthStore"
+      ],
+      "buttonLabels": []
+    },
+    "/pharmacy/narcotics": {
+      "onClicks": 0,
+      "buttons": 0,
+      "links": 0,
+      "inputs": 0,
+      "forms": 0,
+      "submits": 0,
+      "dialogs": 0,
+      "nativeDialogs": 0,
+      "ariaLabels": [],
+      "toasts": 0,
+      "audits": 0,
+      "stores": [
+        "useNarcoticsStore"
+      ],
+      "buttonLabels": []
+    },
+    "/pharmacy/queue": {
+      "onClicks": 21,
+      "buttons": 16,
+      "links": 0,
+      "inputs": 2,
+      "forms": 0,
+      "submits": 0,
+      "dialogs": 0,
+      "nativeDialogs": 0,
+      "ariaLabels": [],
+      "toasts": 6,
+      "audits": 0,
+      "stores": [
+        "usePharmacyStore",
+        "usePharmacyInventoryStore",
+        "useNarcoticsStore",
+        "usePatientProfileStore",
+        "useDischargeStore",
+        "useNotificationStore",
+        "useAuthStore"
+      ],
+      "buttonLabels": [
+        "Cancel",
+        "Release to queue"
+      ]
+    },
+    "/quality/dashboard": {
+      "onClicks": 1,
+      "buttons": 3,
+      "links": 2,
+      "inputs": 0,
+      "forms": 0,
+      "submits": 0,
+      "dialogs": 0,
+      "nativeDialogs": 0,
+      "ariaLabels": [],
+      "toasts": 1,
+      "audits": 0,
+      "stores": [
+        "useQualityStore"
+      ],
+      "buttonLabels": [
+        "Review"
+      ]
+    },
+    "/quality/incidents": {
+      "onClicks": 7,
+      "buttons": 4,
+      "links": 0,
+      "inputs": 5,
+      "forms": 0,
+      "submits": 0,
+      "dialogs": 0,
+      "nativeDialogs": 0,
+      "ariaLabels": [],
+      "toasts": 3,
+      "audits": 0,
+      "stores": [
+        "useQualityStore"
+      ],
+      "buttonLabels": [
+        "Log Incident",
+        "setShowForm(false)}>Cancel"
+      ]
+    },
+    "/quality/nabh": {
+      "onClicks": 1,
+      "buttons": 1,
+      "links": 1,
+      "inputs": 0,
+      "forms": 0,
+      "submits": 0,
+      "dialogs": 0,
+      "nativeDialogs": 0,
+      "ariaLabels": [],
+      "toasts": 0,
+      "audits": 0,
+      "stores": [
+        "useQualityStore",
+        "useAuditStore"
+      ],
+      "buttonLabels": []
+    },
+    "/radiology/bench": {
+      "onClicks": 8,
+      "buttons": 8,
+      "links": 0,
+      "inputs": 1,
+      "forms": 0,
+      "submits": 0,
+      "dialogs": 0,
+      "nativeDialogs": 0,
+      "ariaLabels": [],
+      "toasts": 5,
+      "audits": 0,
+      "stores": [
+        "useRadiologyStudiesStore",
+        "useAuthStore"
+      ],
+      "buttonLabels": []
+    },
+    "/radiology/dashboard": {
+      "onClicks": 3,
+      "buttons": 3,
+      "links": 7,
+      "inputs": 1,
+      "forms": 0,
+      "submits": 0,
+      "dialogs": 0,
+      "nativeDialogs": 0,
+      "ariaLabels": [],
+      "toasts": 1,
+      "audits": 0,
+      "stores": [
+        "useRadiologyStudiesStore",
+        "useAuthStore"
+      ],
+      "buttonLabels": []
+    },
+    "/radiology/inbox": {
+      "onClicks": 11,
+      "buttons": 11,
+      "links": 0,
+      "inputs": 0,
+      "forms": 0,
+      "submits": 0,
+      "dialogs": 0,
+      "nativeDialogs": 0,
+      "ariaLabels": [],
+      "toasts": 3,
+      "audits": 0,
+      "stores": [
+        "useRadiologyStudiesStore",
+        "useAuthStore"
+      ],
+      "buttonLabels": []
+    },
+    "/radiology/reading": {
+      "onClicks": 6,
+      "buttons": 6,
+      "links": 0,
+      "inputs": 0,
+      "forms": 0,
+      "submits": 0,
+      "dialogs": 0,
+      "nativeDialogs": 0,
+      "ariaLabels": [],
+      "toasts": 4,
+      "audits": 0,
+      "stores": [
+        "useRadiologyStudiesStore",
+        "useAuthStore"
+      ],
+      "buttonLabels": []
+    },
+    "/radiology/scans": {
+      "onClicks": 8,
+      "buttons": 8,
+      "links": 0,
+      "inputs": 0,
+      "forms": 0,
+      "submits": 0,
+      "dialogs": 0,
+      "nativeDialogs": 0,
+      "ariaLabels": [
+        "DICOM viewer",
+        "Zoom out",
+        "Zoom in",
+        "Reset",
+        "Rotate",
+        "Close"
+      ],
+      "toasts": 2,
+      "audits": 0,
+      "stores": [
+        "useRadiologyStore"
+      ],
+      "buttonLabels": []
+    },
+    "/radiology/templates": {
+      "onClicks": 1,
+      "buttons": 1,
+      "links": 0,
+      "inputs": 0,
+      "forms": 0,
+      "submits": 0,
+      "dialogs": 0,
+      "nativeDialogs": 0,
+      "ariaLabels": [],
+      "toasts": 1,
+      "audits": 0,
+      "stores": [],
+      "buttonLabels": []
+    },
+    "/radiology/verification": {
+      "onClicks": 3,
+      "buttons": 3,
+      "links": 0,
+      "inputs": 0,
+      "forms": 0,
+      "submits": 0,
+      "dialogs": 0,
+      "nativeDialogs": 0,
+      "ariaLabels": [],
+      "toasts": 1,
+      "audits": 0,
+      "stores": [
+        "useRadiologyStudiesStore",
+        "useAuthStore"
+      ],
+      "buttonLabels": []
+    },
+    "/radiology/viewer": {
+      "onClicks": 0,
+      "buttons": 1,
+      "links": 0,
+      "inputs": 0,
+      "forms": 0,
+      "submits": 0,
+      "dialogs": 0,
+      "nativeDialogs": 0,
+      "ariaLabels": [],
+      "toasts": 0,
+      "audits": 0,
+      "stores": [],
+      "buttonLabels": []
+    },
+    "/reception/ambulance": {
+      "onClicks": 1,
+      "buttons": 1,
+      "links": 0,
+      "inputs": 0,
+      "forms": 0,
+      "submits": 0,
+      "dialogs": 0,
+      "nativeDialogs": 0,
+      "ariaLabels": [],
+      "toasts": 1,
+      "audits": 0,
+      "stores": [
+        "useAmbulanceStore"
+      ],
+      "buttonLabels": []
+    },
+    "/reception/appointments": {
+      "onClicks": 13,
+      "buttons": 11,
+      "links": 0,
+      "inputs": 2,
+      "forms": 0,
+      "submits": 0,
+      "dialogs": 0,
+      "nativeDialogs": 0,
+      "ariaLabels": [
+        "Close"
+      ],
+      "toasts": 5,
+      "audits": 0,
+      "stores": [
+        "usePatientStore"
+      ],
+      "buttonLabels": []
+    },
+    "/reception/beds": {
+      "onClicks": 0,
+      "buttons": 0,
+      "links": 0,
+      "inputs": 0,
+      "forms": 0,
+      "submits": 0,
+      "dialogs": 0,
+      "nativeDialogs": 0,
+      "ariaLabels": [],
+      "toasts": 0,
+      "audits": 0,
+      "stores": [
+        "useAdmissionStore"
+      ],
+      "buttonLabels": []
+    },
+    "/reception/billing": {
+      "onClicks": 2,
+      "buttons": 2,
+      "links": 0,
+      "inputs": 1,
+      "forms": 0,
+      "submits": 0,
+      "dialogs": 0,
+      "nativeDialogs": 0,
+      "ariaLabels": [],
+      "toasts": 1,
+      "audits": 0,
+      "stores": [
+        "useBillingStore"
+      ],
+      "buttonLabels": []
+    },
+    "/reception/dashboard": {
+      "onClicks": 0,
+      "buttons": 0,
+      "links": 7,
+      "inputs": 0,
+      "forms": 0,
+      "submits": 0,
+      "dialogs": 0,
+      "nativeDialogs": 0,
+      "ariaLabels": [],
+      "toasts": 0,
+      "audits": 0,
+      "stores": [
+        "useAuthStore",
+        "usePatientStore",
+        "useBillingStore",
+        "useAdmissionStore",
+        "useNotificationStore",
+        "useWhatsAppStore"
+      ],
+      "buttonLabels": []
+    },
+    "/reception/diagnostics": {
+      "onClicks": 0,
+      "buttons": 0,
+      "links": 0,
+      "inputs": 0,
+      "forms": 0,
+      "submits": 0,
+      "dialogs": 0,
+      "nativeDialogs": 0,
+      "ariaLabels": [],
+      "toasts": 0,
+      "audits": 0,
+      "stores": [
+        "useLabStore",
+        "useRadiologyStore",
+        "usePharmacyStore",
+        "useBloodBankStore"
+      ],
+      "buttonLabels": []
+    },
+    "/reception/downloads": {
+      "onClicks": 3,
+      "buttons": 3,
+      "links": 0,
+      "inputs": 1,
+      "forms": 0,
+      "submits": 0,
+      "dialogs": 0,
+      "nativeDialogs": 0,
+      "ariaLabels": [
+        "Print",
+        "Download"
+      ],
+      "toasts": 2,
+      "audits": 0,
+      "stores": [],
+      "buttonLabels": []
+    },
+    "/reception/messages": {
+      "onClicks": 15,
+      "buttons": 13,
+      "links": 0,
+      "inputs": 2,
+      "forms": 0,
+      "submits": 0,
+      "dialogs": 0,
+      "nativeDialogs": 0,
+      "ariaLabels": [
+        "Send",
+        "Close"
+      ],
+      "toasts": 3,
+      "audits": 0,
+      "stores": [
+        "useWhatsAppStore",
+        "useNotificationStore",
+        "useAuthStore"
+      ],
+      "buttonLabels": []
+    },
+    "/reception/opd": {
+      "onClicks": 13,
+      "buttons": 8,
+      "links": 0,
+      "inputs": 0,
+      "forms": 0,
+      "submits": 0,
+      "dialogs": 0,
+      "nativeDialogs": 0,
+      "ariaLabels": [
+        "Search patients",
+        "Close"
+      ],
+      "toasts": 6,
+      "audits": 0,
+      "stores": [
+        "usePatientStore"
+      ],
+      "buttonLabels": []
+    },
+    "/reception/patients": {
+      "onClicks": 7,
+      "buttons": 6,
+      "links": 0,
+      "inputs": 1,
+      "forms": 0,
+      "submits": 0,
+      "dialogs": 0,
+      "nativeDialogs": 0,
+      "ariaLabels": [
+        "Patient details",
+        "Close"
+      ],
+      "toasts": 2,
+      "audits": 0,
+      "stores": [
+        "usePatientStore"
+      ],
+      "buttonLabels": []
+    },
+    "/reception/queue": {
+      "onClicks": 1,
+      "buttons": 1,
+      "links": 0,
+      "inputs": 0,
+      "forms": 0,
+      "submits": 0,
+      "dialogs": 0,
+      "nativeDialogs": 0,
+      "ariaLabels": [],
+      "toasts": 0,
+      "audits": 0,
+      "stores": [
+        "usePatientStore"
+      ],
+      "buttonLabels": []
+    },
+    "/reception/reports": {
+      "onClicks": 0,
+      "buttons": 0,
+      "links": 0,
+      "inputs": 0,
+      "forms": 0,
+      "submits": 0,
+      "dialogs": 0,
+      "nativeDialogs": 0,
+      "ariaLabels": [],
+      "toasts": 0,
+      "audits": 0,
+      "stores": [
+        "usePatientStore",
+        "useBillingStore"
+      ],
+      "buttonLabels": []
+    },
+    "/reception/setup": {
+      "onClicks": 2,
+      "buttons": 2,
+      "links": 0,
+      "inputs": 1,
+      "forms": 0,
+      "submits": 0,
+      "dialogs": 0,
+      "nativeDialogs": 0,
+      "ariaLabels": [],
+      "toasts": 1,
+      "audits": 0,
+      "stores": [],
+      "buttonLabels": []
+    },
+    "/reception/tpa": {
+      "onClicks": 0,
+      "buttons": 0,
+      "links": 0,
+      "inputs": 0,
+      "forms": 0,
+      "submits": 0,
+      "dialogs": 0,
+      "nativeDialogs": 0,
+      "ariaLabels": [],
+      "toasts": 0,
+      "audits": 0,
+      "stores": [
+        "useInsuranceStore"
+      ],
+      "buttonLabels": []
+    }
+  },
+  "stores": [
+    {
+      "name": "useAdmissionStore",
+      "file": "src/store/useAdmissionStore.ts",
+      "persisted": true,
+      "auditEmits": 2,
+      "mutationActions": 12,
+      "bytes": 11733
+    },
+    {
+      "name": "useAmbulanceStore",
+      "file": "src/store/useAmbulanceStore.ts",
+      "persisted": true,
+      "auditEmits": 2,
+      "mutationActions": 8,
+      "bytes": 5663
+    },
+    {
+      "name": "useAssistantStore",
+      "file": "src/store/useAssistantStore.ts",
+      "persisted": true,
+      "auditEmits": 0,
+      "mutationActions": 8,
+      "bytes": 1837
+    },
+    {
+      "name": "useAuditStore",
+      "file": "src/store/useAuditStore.ts",
+      "persisted": false,
+      "auditEmits": 0,
+      "mutationActions": 10,
+      "bytes": 19716
+    },
+    {
+      "name": "useAuthStore",
+      "file": "src/store/useAuthStore.ts",
+      "persisted": true,
+      "auditEmits": 0,
+      "mutationActions": 6,
+      "bytes": 3923
+    },
+    {
+      "name": "useBillingStore",
+      "file": "src/store/useBillingStore.ts",
+      "persisted": true,
+      "auditEmits": 4,
+      "mutationActions": 14,
+      "bytes": 13084
+    },
+    {
+      "name": "useBloodBankStore",
+      "file": "src/store/useBloodBankStore.ts",
+      "persisted": true,
+      "auditEmits": 1,
+      "mutationActions": 18,
+      "bytes": 10528
+    },
+    {
+      "name": "useBMWStore",
+      "file": "src/store/useBMWStore.ts",
+      "persisted": true,
+      "auditEmits": 2,
+      "mutationActions": 14,
+      "bytes": 8103
+    },
+    {
+      "name": "useCameraStore",
+      "file": "src/store/useCameraStore.ts",
+      "persisted": false,
+      "auditEmits": 0,
+      "mutationActions": 8,
+      "bytes": 1891
+    },
+    {
+      "name": "useConsultationStore",
+      "file": "src/store/useConsultationStore.ts",
+      "persisted": true,
+      "auditEmits": 0,
+      "mutationActions": 46,
+      "bytes": 8215
+    },
+    {
+      "name": "useCSSDStore",
+      "file": "src/store/useCSSDStore.ts",
+      "persisted": true,
+      "auditEmits": 3,
+      "mutationActions": 12,
+      "bytes": 8146
+    },
+    {
+      "name": "useDietaryStore",
+      "file": "src/store/useDietaryStore.ts",
+      "persisted": true,
+      "auditEmits": 2,
+      "mutationActions": 14,
+      "bytes": 6104
+    },
+    {
+      "name": "useDischargeStore",
+      "file": "src/store/useDischargeStore.ts",
+      "persisted": true,
+      "auditEmits": 2,
+      "mutationActions": 18,
+      "bytes": 9414
+    },
+    {
+      "name": "useDoctorProfileStore",
+      "file": "src/store/useDoctorProfileStore.ts",
+      "persisted": true,
+      "auditEmits": 0,
+      "mutationActions": 2,
+      "bytes": 1191
+    },
+    {
+      "name": "useDoctorStatsStore",
+      "file": "src/store/useDoctorStatsStore.ts",
+      "persisted": true,
+      "auditEmits": 0,
+      "mutationActions": 8,
+      "bytes": 6682
+    },
+    {
+      "name": "useDrugMasterStore",
+      "file": "src/store/useDrugMasterStore.ts",
+      "persisted": true,
+      "auditEmits": 0,
+      "mutationActions": 4,
+      "bytes": 3826
+    },
+    {
+      "name": "useEmergencyStore",
+      "file": "src/store/useEmergencyStore.ts",
+      "persisted": true,
+      "auditEmits": 0,
+      "mutationActions": 4,
+      "bytes": 1637
+    },
+    {
+      "name": "useERStore",
+      "file": "src/store/useERStore.ts",
+      "persisted": true,
+      "auditEmits": 1,
+      "mutationActions": 20,
+      "bytes": 13737
+    },
+    {
+      "name": "useFeedbackStore",
+      "file": "src/store/useFeedbackStore.ts",
+      "persisted": true,
+      "auditEmits": 0,
+      "mutationActions": 6,
+      "bytes": 2437
+    },
+    {
+      "name": "useFollowupStore",
+      "file": "src/store/useFollowupStore.ts",
+      "persisted": true,
+      "auditEmits": 0,
+      "mutationActions": 6,
+      "bytes": 6414
+    },
+    {
+      "name": "useHousekeepingStore",
+      "file": "src/store/useHousekeepingStore.ts",
+      "persisted": true,
+      "auditEmits": 2,
+      "mutationActions": 10,
+      "bytes": 4760
+    },
+    {
+      "name": "useHRStore",
+      "file": "src/store/useHRStore.ts",
+      "persisted": true,
+      "auditEmits": 4,
+      "mutationActions": 66,
+      "bytes": 60548
+    },
+    {
+      "name": "useInpatientStore",
+      "file": "src/store/useInpatientStore.ts",
+      "persisted": true,
+      "auditEmits": 0,
+      "mutationActions": 65,
+      "bytes": 38494
+    },
+    {
+      "name": "useInsuranceStore",
+      "file": "src/store/useInsuranceStore.ts",
+      "persisted": true,
+      "auditEmits": 1,
+      "mutationActions": 12,
+      "bytes": 11319
+    },
+    {
+      "name": "useInventoryStore",
+      "file": "src/store/useInventoryStore.ts",
+      "persisted": true,
+      "auditEmits": 0,
+      "mutationActions": 0,
+      "bytes": 1114
+    },
+    {
+      "name": "useJourneyStore",
+      "file": "src/store/useJourneyStore.ts",
+      "persisted": true,
+      "auditEmits": 1,
+      "mutationActions": 10,
+      "bytes": 8042
+    },
+    {
+      "name": "useLabOrdersStore",
+      "file": "src/store/useLabOrdersStore.ts",
+      "persisted": true,
+      "auditEmits": 3,
+      "mutationActions": 36,
+      "bytes": 28466
+    },
+    {
+      "name": "useLabQCStore",
+      "file": "src/store/useLabQCStore.ts",
+      "persisted": true,
+      "auditEmits": 0,
+      "mutationActions": 6,
+      "bytes": 7632
+    },
+    {
+      "name": "useLabStore",
+      "file": "src/store/useLabStore.ts",
+      "persisted": false,
+      "auditEmits": 0,
+      "mutationActions": 4,
+      "bytes": 3947
+    },
+    {
+      "name": "useMessagingStore",
+      "file": "src/store/useMessagingStore.ts",
+      "persisted": true,
+      "auditEmits": 0,
+      "mutationActions": 9,
+      "bytes": 7483
+    },
+    {
+      "name": "useMortuaryStore",
+      "file": "src/store/useMortuaryStore.ts",
+      "persisted": true,
+      "auditEmits": 4,
+      "mutationActions": 14,
+      "bytes": 5393
+    },
+    {
+      "name": "useNarcoticsStore",
+      "file": "src/store/useNarcoticsStore.ts",
+      "persisted": true,
+      "auditEmits": 0,
+      "mutationActions": 2,
+      "bytes": 1649
+    },
+    {
+      "name": "useNotificationStore",
+      "file": "src/store/useNotificationStore.ts",
+      "persisted": true,
+      "auditEmits": 0,
+      "mutationActions": 12,
+      "bytes": 5025
+    },
+    {
+      "name": "useNursingStore",
+      "file": "src/store/useNursingStore.ts",
+      "persisted": true,
+      "auditEmits": 0,
+      "mutationActions": 8,
+      "bytes": 2898
+    },
+    {
+      "name": "useOTStore",
+      "file": "src/store/useOTStore.ts",
+      "persisted": true,
+      "auditEmits": 2,
+      "mutationActions": 34,
+      "bytes": 19260
+    },
+    {
+      "name": "usePatientLiveStore",
+      "file": "src/store/usePatientLiveStore.ts",
+      "persisted": true,
+      "auditEmits": 0,
+      "mutationActions": 8,
+      "bytes": 6482
+    },
+    {
+      "name": "usePatientOrdersStore",
+      "file": "src/store/usePatientOrdersStore.ts",
+      "persisted": true,
+      "auditEmits": 0,
+      "mutationActions": 12,
+      "bytes": 5585
+    },
+    {
+      "name": "usePatientProfileStore",
+      "file": "src/store/usePatientProfileStore.ts",
+      "persisted": true,
+      "auditEmits": 0,
+      "mutationActions": 6,
+      "bytes": 3697
+    },
+    {
+      "name": "usePatientStore",
+      "file": "src/store/usePatientStore.ts",
+      "persisted": true,
+      "auditEmits": 2,
+      "mutationActions": 24,
+      "bytes": 17241
+    },
+    {
+      "name": "usePharmacyInventoryStore",
+      "file": "src/store/usePharmacyInventoryStore.ts",
+      "persisted": true,
+      "auditEmits": 0,
+      "mutationActions": 14,
+      "bytes": 7325
+    },
+    {
+      "name": "usePharmacyStore",
+      "file": "src/store/usePharmacyStore.ts",
+      "persisted": true,
+      "auditEmits": 3,
+      "mutationActions": 24,
+      "bytes": 20510
+    },
+    {
+      "name": "useQualityStore",
+      "file": "src/store/useQualityStore.ts",
+      "persisted": true,
+      "auditEmits": 0,
+      "mutationActions": 8,
+      "bytes": 6440
+    },
+    {
+      "name": "useRadiologyStore",
+      "file": "src/store/useRadiologyStore.ts",
+      "persisted": false,
+      "auditEmits": 0,
+      "mutationActions": 3,
+      "bytes": 4121
+    },
+    {
+      "name": "useRadiologyStudiesStore",
+      "file": "src/store/useRadiologyStudiesStore.ts",
+      "persisted": true,
+      "auditEmits": 0,
+      "mutationActions": 30,
+      "bytes": 22453
+    },
+    {
+      "name": "useShiftStore",
+      "file": "src/store/useShiftStore.ts",
+      "persisted": true,
+      "auditEmits": 0,
+      "mutationActions": 10,
+      "bytes": 4100
+    },
+    {
+      "name": "useStatutoryStore",
+      "file": "src/store/useStatutoryStore.ts",
+      "persisted": true,
+      "auditEmits": 3,
+      "mutationActions": 10,
+      "bytes": 11527
+    },
+    {
+      "name": "useVendorStore",
+      "file": "src/store/useVendorStore.ts",
+      "persisted": true,
+      "auditEmits": 7,
+      "mutationActions": 24,
+      "bytes": 14011
+    },
+    {
+      "name": "useWardStore",
+      "file": "src/store/useWardStore.ts",
+      "persisted": true,
+      "auditEmits": 0,
+      "mutationActions": 10,
+      "bytes": 4701
+    },
+    {
+      "name": "useWhatsAppStore",
+      "file": "src/store/useWhatsAppStore.ts",
+      "persisted": true,
+      "auditEmits": 0,
+      "mutationActions": 10,
+      "bytes": 5645
+    }
+  ],
+  "components": [
+    "src/components/ClientOnly.tsx",
+    "src/components/PatientProfileSummary.tsx",
+    "src/components/ResultsTicker.tsx",
+    "src/components/StoreHydrator.tsx",
+    "src/components/admin/AddStaffWizard.tsx",
+    "src/components/admin/CoverageGauge.tsx",
+    "src/components/admin/CoverageWatcherProvider.tsx",
+    "src/components/admin/DemoSeedControl.tsx",
+    "src/components/admin/ShiftTemplateModal.tsx",
+    "src/components/admin/SickCallModal.tsx",
+    "src/components/admin/StaffProfileDrawer.tsx",
+    "src/components/admin/SwapRequestModal.tsx",
+    "src/components/clinical/OnShiftTeam.tsx",
+    "src/components/doctor/ipd/ActionsMenu.tsx",
+    "src/components/doctor/ipd/InpatientRow.tsx",
+    "src/components/doctor/ipd/QuickPeekDrawer.tsx",
+    "src/components/doctor/ipd/chart.tsx",
+    "src/components/doctor/ipd/ipdModals.tsx",
+    "src/components/doctor/ipd/panels.tsx",
+    "src/components/features/AISummaryWidget.tsx",
+    "src/components/features/AiFeedbackButtons.tsx",
+    "src/components/features/AiPreBrief.tsx",
+    "src/components/features/CopilotLayout.tsx",
+    "src/components/features/CopilotPane.tsx",
+    "src/components/features/HitlReviewCard.tsx",
+    "src/components/features/PatientCard.tsx",
+    "src/components/intake/CaptureSteps.tsx",
+    "src/components/intake/ChoiceStep.tsx",
+    "src/components/intake/ConsultSteps.tsx",
+    "src/components/intake/FieldSteps.tsx",
+    "src/components/intake/IntakeFlow.tsx",
+    "src/components/intake/IntakeShell.tsx",
+    "src/components/intake/ReviewSuccess.tsx",
+    "src/components/layout/AppShell.tsx",
+    "src/components/layout/RoleGuard.tsx",
+    "src/components/messaging/StaffMessages.tsx",
+    "src/components/nurse/AdministerModal.tsx",
+    "src/components/nurse/DischargeClearanceModal.tsx",
+    "src/components/nurse/FirstVisitWizard.tsx",
+    "src/components/nurse/ShiftBanner.tsx",
+    "src/components/nurse/VitalsFields.tsx",
+    "src/components/nurse/VitalsForm.tsx",
+    "src/components/patient/ComingSoon.tsx",
+    "src/components/patient/OrdersServiceBanner.tsx",
+    "src/components/patient/dashboard/AiCompanionBar.tsx",
+    "src/components/patient/dashboard/DemoControls.tsx",
+    "src/components/patient/dashboard/DoctorOrdersCard.tsx",
+    "src/components/patient/dashboard/FamilyTrackingCard.tsx",
+    "src/components/patient/dashboard/ForYouCard.tsx",
+    "src/components/patient/dashboard/HealthTrendsCard.tsx",
+    "src/components/patient/dashboard/LiveFeed.tsx",
+    "src/components/patient/dashboard/LiveJourneyCard.tsx",
+    "src/components/patient/dashboard/QuickActions.tsx",
+    "src/components/pharmacy/DoctorStockAlerts.tsx",
+    "src/components/reception/VisibilityHeader.tsx",
+    "src/components/ui/AiConfidenceBadge.tsx",
+    "src/components/ui/AiDisclaimer.tsx",
+    "src/components/ui/AiInsightPanel.tsx",
+    "src/components/ui/ConfirmDialog.tsx",
+    "src/components/ui/DataTable.tsx",
+    "src/components/ui/EmptyState.tsx",
+    "src/components/ui/LocaleToggle.tsx",
+    "src/components/ui/PageHeader.tsx",
+    "src/components/ui/SkeletonCard.tsx",
+    "src/components/ui/StatusBadge.tsx",
+    "src/components/ui/avatar.tsx",
+    "src/components/ui/badge.tsx",
+    "src/components/ui/button.tsx",
+    "src/components/ui/card.tsx",
+    "src/components/ui/input.tsx",
+    "src/components/ui/neon-badge.tsx",
+    "src/components/ui/progress-ring.tsx",
+    "src/components/ui/stat-card.tsx",
+    "src/components/ui/status-stepper.tsx",
+    "src/components/ui/textarea.tsx"
+  ],
+  "api": [
+    {
+      "file": "src/lib/api/audit.ts",
+      "methods": [
+        "list",
+        "put",
+        "putMany",
+        "count"
+      ],
+      "schemaCount": 1
+    },
+    {
+      "file": "src/lib/api/bills.ts",
+      "methods": [
+        "list",
+        "get",
+        "byPatient",
+        "byVisit",
+        "byIpd",
+        "paymentsByBill"
+      ],
+      "schemaCount": 3
+    },
+    {
+      "file": "src/lib/api/discharge.ts",
+      "methods": [
+        "list",
+        "get",
+        "byIpd"
+      ],
+      "schemaCount": 2
+    },
+    {
+      "file": "src/lib/api/drugs.ts",
+      "methods": [
+        "list",
+        "get",
+        "byName",
+        "put",
+        "patch"
+      ],
+      "schemaCount": 1
+    },
+    {
+      "file": "src/lib/api/emergency.ts",
+      "methods": [
+        "list",
+        "get",
+        "triage",
+        "floor"
+      ],
+      "schemaCount": 1
+    },
+    {
+      "file": "src/lib/api/encounters.ts",
+      "methods": [
+        "list",
+        "get",
+        "byVisit",
+        "byPatient",
+        "patch"
+      ],
+      "schemaCount": 1
+    },
+    {
+      "file": "src/lib/api/index.ts",
+      "methods": [],
+      "schemaCount": 0
+    },
+    {
+      "file": "src/lib/api/ipd.ts",
+      "methods": [
+        "list",
+        "get",
+        "byWard",
+        "put",
+        "list",
+        "all",
+        "get",
+        "byPatient",
+        "list",
+        "list",
+        "due"
+      ],
+      "schemaCount": 5
+    },
+    {
+      "file": "src/lib/api/lab.ts",
+      "methods": [
+        "list",
+        "get",
+        "byPatient",
+        "byOrder",
+        "released"
+      ],
+      "schemaCount": 3
+    },
+    {
+      "file": "src/lib/api/orders.ts",
+      "methods": [
+        "list",
+        "get",
+        "byPatient",
+        "byKind",
+        "byVisit",
+        "active",
+        "patch"
+      ],
+      "schemaCount": 2
+    },
+    {
+      "file": "src/lib/api/patients.ts",
+      "methods": [
+        "list",
+        "get",
+        "count"
+      ],
+      "schemaCount": 2
+    },
+    {
+      "file": "src/lib/api/pharmacy.ts",
+      "methods": [
+        "queue",
+        "getClaim",
+        "dispenses",
+        "list"
+      ],
+      "schemaCount": 3
+    },
+    {
+      "file": "src/lib/api/prescriptions.ts",
+      "methods": [
+        "list",
+        "get",
+        "byPatient",
+        "byStatus",
+        "put"
+      ],
+      "schemaCount": 3
+    },
+    {
+      "file": "src/lib/api/radiology.ts",
+      "methods": [
+        "list",
+        "get",
+        "byPatient",
+        "byOrder",
+        "inbox",
+        "reading",
+        "released",
+        "put"
+      ],
+      "schemaCount": 1
+    },
+    {
+      "file": "src/lib/api/staff.ts",
+      "methods": [
+        "list",
+        "get",
+        "put"
+      ],
+      "schemaCount": 1
+    },
+    {
+      "file": "src/lib/api/visits.ts",
+      "methods": [
+        "list",
+        "get",
+        "byPatient",
+        "active",
+        "patch"
+      ],
+      "schemaCount": 1
+    },
+    {
+      "file": "src/lib/api/_core.ts",
+      "methods": [
+        "list",
+        "get",
+        "put",
+        "putMany",
+        "patch",
+        "remove",
+        "count",
+        "replaceAll"
+      ],
+      "schemaCount": 0
+    },
+    {
+      "file": "src/lib/api/_seed.ts",
+      "methods": [],
+      "schemaCount": 0
+    }
+  ],
+  "i18n": {
+    "en": 122,
+    "hi": 122
+  }
+}

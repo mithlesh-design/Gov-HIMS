@@ -1,0 +1,72 @@
+[
+  {
+    "role": "admin",
+    "route": "/admin/operations",
+    "label": "01-S7-ops-cockpit",
+    "line": "Predictive Operations Cockpit — 4 forecasters live on the ops surface.",
+    "screenshot": "M5-01-S7-ops-cockpit.png"
+  },
+  {
+    "role": "admin",
+    "route": "/admin/finance",
+    "label": "02-S8-rcm-growth",
+    "line": "Revenue-Cycle Growth Cockpit — denial-risk + AR + leakage with ₹-impact.",
+    "screenshot": "M5-02-S8-rcm-growth.png"
+  },
+  {
+    "role": "admin",
+    "route": "/admin/compliance",
+    "label": "03-S9-nabh-evidence",
+    "line": "NABH Evidence Live Cockpit — 9 chapters with AI suggested next-actions.",
+    "screenshot": "M5-03-S9-nabh-evidence.png"
+  },
+  {
+    "role": "admin",
+    "route": "/admin/disha",
+    "label": "04-S10-dpdp-selfaudit",
+    "line": "DPDP / DISHA Self-Audit — 5 principles scored, anchored in DPDP §§.",
+    "screenshot": "M5-04-S10-dpdp-selfaudit.png"
+  },
+  {
+    "role": "doctor",
+    "route": "/doctor/dashboard",
+    "label": "05-S1-drug-safety",
+    "line": "Drug-Safety Reasoning — Anil + Augmentin → Penicillin allergy block, with alternates.",
+    "screenshot": "M5-05-S1-drug-safety.png"
+  },
+  {
+    "role": "doctor",
+    "route": "/doctor/ipd",
+    "label": "06-S14-S2-presence-ews",
+    "line": "Care-Team Presence + NEWS2 banner — handover queue + ambient ward watcher.",
+    "screenshot": "M5-06-S14-S2-presence-ews.png"
+  },
+  {
+    "role": "doctor",
+    "route": "/doctor/analytics",
+    "label": "07-S15-day-in-review",
+    "line": "Doctor Day-in-Review — narration of today's consults / Rx / AI accept-rate.",
+    "screenshot": "M5-07-S15-day-in-review.png"
+  },
+  {
+    "role": "patient",
+    "route": "/patient/dashboard",
+    "label": "08-S11-S12-S13-patient-portal",
+    "line": "Patient super-app — AI Health Summary + Family-Track invite + Proactive Nudges.",
+    "screenshot": "M5-08-S11-S12-S13-patient-portal.png"
+  },
+  {
+    "role": "nurse",
+    "route": "/nurse/dashboard",
+    "label": "09-S14-nurse-presence",
+    "line": "Care-Team Presence on nurse dashboard — sign + receive handover.",
+    "screenshot": "M5-09-S14-nurse-presence.png"
+  },
+  {
+    "role": "reception",
+    "route": "/reception/opd",
+    "label": "10-S6-ocr-intake",
+    "line": "OPD walk-in modal carries the mock OCR scan (Aadhaar / insurance / lab).",
+    "screenshot": "M5-10-S6-ocr-intake.png"
+  }
+]

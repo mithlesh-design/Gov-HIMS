@@ -1,0 +1,593 @@
+{
+  "ranAt": "2026-06-04T11:40:08.611Z",
+  "summary": {
+    "total": 16,
+    "pass": 16,
+    "partial": 0,
+    "fail": 0,
+    "consoleErrors": 0
+  },
+  "flows": [
+    {
+      "id": "F1-ER",
+      "role": "Emergency",
+      "portalOk": true,
+      "steps": [
+        {
+          "name": "ER overview",
+          "route": "/emergency/dashboard",
+          "expect": "ER",
+          "pass": true,
+          "anil": null,
+          "screenshot": "M3-f1-er-er-overview.png"
+        },
+        {
+          "name": "ER triage queue",
+          "route": "/emergency/triage",
+          "expect": "Triage",
+          "pass": true,
+          "anil": false,
+          "defensiblyAbsent": true,
+          "screenshot": "M3-f1-er-er-triage-queue.png"
+        },
+        {
+          "name": "ER floor",
+          "route": "/emergency/floor",
+          "expect": "Floor",
+          "pass": true,
+          "anil": null,
+          "screenshot": "M3-f1-er-er-floor.png"
+        }
+      ],
+      "pass": true,
+      "partial": false
+    },
+    {
+      "id": "F2-DoctorOPD",
+      "role": "Doctor",
+      "portalOk": true,
+      "steps": [
+        {
+          "name": "OPD queue",
+          "route": "/doctor/dashboard",
+          "expect": "Queue",
+          "pass": true,
+          "anil": null,
+          "screenshot": "M3-f2-doctoropd-opd-queue.png"
+        },
+        {
+          "name": "IPD list",
+          "route": "/doctor/ipd",
+          "expect": "Inpatients",
+          "pass": true,
+          "anil": true,
+          "screenshot": "M3-f2-doctoropd-ipd-list.png"
+        },
+        {
+          "name": "Online consults",
+          "route": "/doctor/online",
+          "expect": "Online",
+          "pass": true,
+          "anil": null,
+          "screenshot": "M3-f2-doctoropd-online-consults.png"
+        },
+        {
+          "name": "My Activity",
+          "route": "/doctor/analytics",
+          "expect": "Activity",
+          "pass": true,
+          "anil": null,
+          "screenshot": "M3-f2-doctoropd-my-activity.png"
+        }
+      ],
+      "pass": true,
+      "partial": false
+    },
+    {
+      "id": "F3-Nurse",
+      "role": "Nurse",
+      "portalOk": true,
+      "steps": [
+        {
+          "name": "Ward dashboard",
+          "route": "/nurse/dashboard",
+          "expect": "Ward",
+          "pass": true,
+          "anil": true,
+          "screenshot": "M3-f3-nurse-ward-dashboard.png"
+        },
+        {
+          "name": "Rounds",
+          "route": "/nurse/rounds",
+          "expect": "Rounds",
+          "pass": true,
+          "anil": null,
+          "screenshot": "M3-f3-nurse-rounds.png"
+        },
+        {
+          "name": "Handover",
+          "route": "/nurse/handover",
+          "expect": "Handover",
+          "pass": true,
+          "anil": null,
+          "screenshot": "M3-f3-nurse-handover.png"
+        }
+      ],
+      "pass": true,
+      "partial": false
+    },
+    {
+      "id": "F4-Lab",
+      "role": "Laboratory",
+      "portalOk": true,
+      "steps": [
+        {
+          "name": "Lab overview",
+          "route": "/lab/dashboard",
+          "expect": "Lab",
+          "pass": true,
+          "anil": null,
+          "screenshot": "M3-f4-lab-lab-overview.png"
+        },
+        {
+          "name": "Bench / inbox",
+          "route": "/lab/benches",
+          "expect": "Bench",
+          "pass": true,
+          "anil": null,
+          "screenshot": "M3-f4-lab-bench-inbox.png"
+        },
+        {
+          "name": "QC chain",
+          "route": "/lab/qc",
+          "expect": "QC",
+          "pass": true,
+          "anil": null,
+          "screenshot": "M3-f4-lab-qc-chain.png"
+        },
+        {
+          "name": "Microbiology",
+          "route": "/lab/microbiology",
+          "expect": "Microbiology",
+          "pass": true,
+          "anil": null,
+          "screenshot": "M3-f4-lab-microbiology.png"
+        }
+      ],
+      "pass": true,
+      "partial": false
+    },
+    {
+      "id": "F5-Radiology",
+      "role": "Radiology",
+      "portalOk": true,
+      "steps": [
+        {
+          "name": "Radiology dashboard",
+          "route": "/radiology/dashboard",
+          "expect": "Radiology",
+          "pass": true,
+          "anil": null,
+          "screenshot": "M3-f5-radiology-radiology-dashboard.png"
+        },
+        {
+          "name": "Inbox",
+          "route": "/radiology/inbox",
+          "expect": "Inbox",
+          "pass": true,
+          "anil": null,
+          "screenshot": "M3-f5-radiology-inbox.png"
+        },
+        {
+          "name": "Reading",
+          "route": "/radiology/reading",
+          "expect": "Reading",
+          "pass": true,
+          "anil": null,
+          "screenshot": "M3-f5-radiology-reading.png"
+        },
+        {
+          "name": "Scans / viewer",
+          "route": "/radiology/scans",
+          "expect": "X-Ray",
+          "pass": true,
+          "anil": null,
+          "screenshot": "M3-f5-radiology-scans-viewer.png"
+        }
+      ],
+      "pass": true,
+      "partial": false
+    },
+    {
+      "id": "F6-Pharmacy",
+      "role": "Pharmacy",
+      "portalOk": true,
+      "steps": [
+        {
+          "name": "Pharmacy dashboard",
+          "route": "/pharmacy/dashboard",
+          "expect": "Pharmacy",
+          "pass": true,
+          "anil": null,
+          "screenshot": "M3-f6-pharmacy-pharmacy-dashboard.png"
+        },
+        {
+          "name": "Unified queue",
+          "route": "/pharmacy/queue",
+          "expect": "Queue",
+          "pass": true,
+          "anil": null,
+          "screenshot": "M3-f6-pharmacy-unified-queue.png"
+        },
+        {
+          "name": "Narcotics register",
+          "route": "/pharmacy/narcotics",
+          "expect": "Narcotic",
+          "pass": true,
+          "anil": false,
+          "defensiblyAbsent": true,
+          "screenshot": "M3-f6-pharmacy-narcotics-register.png"
+        },
+        {
+          "name": "Drug master",
+          "route": "/pharmacy/master",
+          "expect": "Master",
+          "pass": true,
+          "anil": null,
+          "screenshot": "M3-f6-pharmacy-drug-master.png"
+        }
+      ],
+      "pass": true,
+      "partial": false
+    },
+    {
+      "id": "F7-Reception",
+      "role": "Reception",
+      "portalOk": true,
+      "steps": [
+        {
+          "name": "Reception dashboard",
+          "route": "/reception/dashboard",
+          "expect": "Dashboard",
+          "pass": true,
+          "anil": null,
+          "screenshot": "M3-f7-reception-reception-dashboard.png"
+        },
+        {
+          "name": "OPD queue",
+          "route": "/reception/opd",
+          "expect": "OPD",
+          "pass": true,
+          "anil": null,
+          "screenshot": "M3-f7-reception-opd-queue.png"
+        },
+        {
+          "name": "Appointments",
+          "route": "/reception/appointments",
+          "expect": "Appointment",
+          "pass": true,
+          "anil": null,
+          "screenshot": "M3-f7-reception-appointments.png"
+        },
+        {
+          "name": "Patients",
+          "route": "/reception/patients",
+          "expect": "Patient",
+          "pass": true,
+          "anil": false,
+          "defensiblyAbsent": true,
+          "screenshot": "M3-f7-reception-patients.png"
+        }
+      ],
+      "pass": true,
+      "partial": false
+    },
+    {
+      "id": "F8-BedManager",
+      "role": "Admission / Beds",
+      "portalOk": true,
+      "steps": [
+        {
+          "name": "Admission dashboard",
+          "route": "/admission/dashboard",
+          "expect": "Admission",
+          "pass": true,
+          "anil": false,
+          "defensiblyAbsent": true,
+          "screenshot": "M3-f8-bedmanager-admission-dashboard.png"
+        },
+        {
+          "name": "Bed map",
+          "route": "/admission/beds",
+          "expect": "Bed",
+          "pass": true,
+          "anil": null,
+          "screenshot": "M3-f8-bedmanager-bed-map.png"
+        },
+        {
+          "name": "Forecast",
+          "route": "/admission/forecast",
+          "expect": "Forecast",
+          "pass": true,
+          "anil": null,
+          "screenshot": "M3-f8-bedmanager-forecast.png"
+        }
+      ],
+      "pass": true,
+      "partial": false
+    },
+    {
+      "id": "F9-Discharge",
+      "role": "Discharge",
+      "portalOk": true,
+      "steps": [
+        {
+          "name": "Discharge dashboard",
+          "route": "/discharge/dashboard",
+          "expect": "Discharge",
+          "pass": true,
+          "anil": true,
+          "screenshot": "M3-f9-discharge-discharge-dashboard.png"
+        }
+      ],
+      "pass": true,
+      "partial": false
+    },
+    {
+      "id": "F10-OT",
+      "role": "Operation Theater",
+      "portalOk": true,
+      "steps": [
+        {
+          "name": "OT dashboard",
+          "route": "/ot/dashboard",
+          "expect": "OT",
+          "pass": true,
+          "anil": true,
+          "screenshot": "M3-f10-ot-ot-dashboard.png"
+        },
+        {
+          "name": "OT schedule",
+          "route": "/ot/schedule",
+          "expect": "Schedule",
+          "pass": true,
+          "anil": null,
+          "screenshot": "M3-f10-ot-ot-schedule.png"
+        },
+        {
+          "name": "OT checklist",
+          "route": "/ot/checklist",
+          "expect": "Checklist",
+          "pass": true,
+          "anil": null,
+          "screenshot": "M3-f10-ot-ot-checklist.png"
+        }
+      ],
+      "pass": true,
+      "partial": false
+    },
+    {
+      "id": "F11-Billing",
+      "role": "Billing",
+      "portalOk": true,
+      "steps": [
+        {
+          "name": "Billing dashboard",
+          "route": "/billing/dashboard",
+          "expect": "Billing",
+          "pass": true,
+          "anil": true,
+          "screenshot": "M3-f11-billing-billing-dashboard.png"
+        },
+        {
+          "name": "Refunds queue",
+          "route": "/billing/refunds",
+          "expect": "Refund",
+          "pass": true,
+          "anil": null,
+          "screenshot": "M3-f11-billing-refunds-queue.png"
+        },
+        {
+          "name": "Packages",
+          "route": "/billing/packages",
+          "expect": "Package",
+          "pass": true,
+          "anil": null,
+          "screenshot": "M3-f11-billing-packages.png"
+        }
+      ],
+      "pass": true,
+      "partial": false
+    },
+    {
+      "id": "F12-Insurance",
+      "role": "Insurance / TPA",
+      "portalOk": true,
+      "steps": [
+        {
+          "name": "Insurance dashboard",
+          "route": "/insurance/dashboard",
+          "expect": "Insurance",
+          "pass": true,
+          "anil": true,
+          "screenshot": "M3-f12-insurance-insurance-dashboard.png"
+        },
+        {
+          "name": "Claims",
+          "route": "/insurance/claims",
+          "expect": "Claim",
+          "pass": true,
+          "anil": true,
+          "screenshot": "M3-f12-insurance-claims.png"
+        },
+        {
+          "name": "Pre-auth",
+          "route": "/insurance/preauth",
+          "expect": "Pre",
+          "pass": true,
+          "anil": null,
+          "screenshot": "M3-f12-insurance-pre-auth.png"
+        }
+      ],
+      "pass": true,
+      "partial": false
+    },
+    {
+      "id": "F13-Audit",
+      "role": "Audit / Compliance",
+      "portalOk": true,
+      "steps": [
+        {
+          "name": "Audit dashboard",
+          "route": "/audit/dashboard",
+          "expect": "Audit",
+          "pass": true,
+          "anil": null,
+          "screenshot": "M3-f13-audit-audit-dashboard.png"
+        },
+        {
+          "name": "Audit trail",
+          "route": "/audit/log",
+          "expect": "Audit Trail",
+          "pass": true,
+          "anil": true,
+          "screenshot": "M3-f13-audit-audit-trail.png"
+        },
+        {
+          "name": "Reports / evidence",
+          "route": "/audit/reports",
+          "expect": "Report",
+          "pass": true,
+          "anil": null,
+          "screenshot": "M3-f13-audit-reports-evidence.png"
+        }
+      ],
+      "pass": true,
+      "partial": false
+    },
+    {
+      "id": "F14-Quality",
+      "role": "Quality",
+      "portalOk": true,
+      "steps": [
+        {
+          "name": "Quality dashboard",
+          "route": "/quality/dashboard",
+          "expect": "Quality",
+          "pass": true,
+          "anil": null,
+          "screenshot": "M3-f14-quality-quality-dashboard.png"
+        },
+        {
+          "name": "Incidents",
+          "route": "/quality/incidents",
+          "expect": "Incident",
+          "pass": true,
+          "anil": null,
+          "screenshot": "M3-f14-quality-incidents.png"
+        },
+        {
+          "name": "NABH cockpit",
+          "route": "/quality/nabh",
+          "expect": "NABH",
+          "pass": true,
+          "anil": null,
+          "screenshot": "M3-f14-quality-nabh-cockpit.png"
+        }
+      ],
+      "pass": true,
+      "partial": false
+    },
+    {
+      "id": "F15-Admin",
+      "role": "Admin",
+      "portalOk": true,
+      "steps": [
+        {
+          "name": "COO dashboard",
+          "route": "/admin/dashboard",
+          "expect": "Hospital Analytics",
+          "pass": true,
+          "anil": null,
+          "screenshot": "M3-f15-admin-coo-dashboard.png"
+        },
+        {
+          "name": "Compliance cockpit",
+          "route": "/admin/compliance",
+          "expect": "Compliance",
+          "pass": true,
+          "anil": null,
+          "screenshot": "M3-f15-admin-compliance-cockpit.png"
+        },
+        {
+          "name": "Hospital P&L",
+          "route": "/admin/finance",
+          "expect": "P&L",
+          "pass": true,
+          "anil": null,
+          "screenshot": "M3-f15-admin-hospital-p-l.png"
+        },
+        {
+          "name": "Staff directory",
+          "route": "/admin/users",
+          "expect": "Staff",
+          "pass": true,
+          "anil": null,
+          "screenshot": "M3-f15-admin-staff-directory.png"
+        },
+        {
+          "name": "Roster",
+          "route": "/admin/roster",
+          "expect": "Roster",
+          "pass": true,
+          "anil": null,
+          "screenshot": "M3-f15-admin-roster.png"
+        }
+      ],
+      "pass": true,
+      "partial": false
+    },
+    {
+      "id": "F16-Patient",
+      "role": "Patient Portal",
+      "portalOk": true,
+      "steps": [
+        {
+          "name": "Patient dashboard",
+          "route": "/patient/dashboard",
+          "expect": "Dashboard",
+          "pass": true,
+          "anil": null,
+          "screenshot": "M3-f16-patient-patient-dashboard.png"
+        },
+        {
+          "name": "My consultations",
+          "route": "/patient/consultations",
+          "expect": "Consultation",
+          "pass": true,
+          "anil": null,
+          "screenshot": "M3-f16-patient-my-consultations.png"
+        },
+        {
+          "name": "Pathology results",
+          "route": "/patient/pathology",
+          "expect": "Pathology",
+          "pass": true,
+          "anil": null,
+          "screenshot": "M3-f16-patient-pathology-results.png"
+        },
+        {
+          "name": "My discharge",
+          "route": "/patient/discharge",
+          "expect": "Discharge",
+          "pass": true,
+          "anil": null,
+          "screenshot": "M3-f16-patient-my-discharge.png"
+        }
+      ],
+      "pass": true,
+      "partial": false
+    }
+  ],
+  "errors": []
+}

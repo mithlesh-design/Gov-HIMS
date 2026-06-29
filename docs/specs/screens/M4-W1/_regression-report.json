@@ -1,0 +1,450 @@
+{
+  "label": "M4-wave-1",
+  "ranAt": "2026-06-02T08:06:29.789Z",
+  "base": "http://localhost:3000",
+  "roles": [
+    {
+      "label": "Admin",
+      "portal": "Admin Portal",
+      "evidence": "Hospital Analytics",
+      "portalLoaded": true,
+      "contentVisible": true,
+      "errorsDelta": 0,
+      "screenshot": "M4-wave-1-admin.png"
+    },
+    {
+      "label": "Quality",
+      "portal": "Quality & Safety",
+      "evidence": "Quality",
+      "portalLoaded": true,
+      "contentVisible": true,
+      "errorsDelta": 0,
+      "screenshot": "M4-wave-1-quality.png"
+    },
+    {
+      "label": "Doctor",
+      "portal": "Doctor Portal",
+      "evidence": "OPD",
+      "portalLoaded": true,
+      "contentVisible": true,
+      "errorsDelta": 0,
+      "screenshot": "M4-wave-1-doctor.png"
+    },
+    {
+      "label": "Nurse",
+      "portal": "Nursing Station",
+      "evidence": "Ward",
+      "portalLoaded": true,
+      "contentVisible": true,
+      "errorsDelta": 0,
+      "screenshot": "M4-wave-1-nurse.png"
+    },
+    {
+      "label": "Pharmacy",
+      "portal": "Pharmacy",
+      "evidence": "Pharmacy",
+      "portalLoaded": true,
+      "contentVisible": true,
+      "errorsDelta": 0,
+      "screenshot": "M4-wave-1-pharmacy.png"
+    },
+    {
+      "label": "Laboratory",
+      "portal": "Laboratory",
+      "evidence": "Lab",
+      "portalLoaded": true,
+      "contentVisible": true,
+      "errorsDelta": 0,
+      "screenshot": "M4-wave-1-laboratory.png"
+    },
+    {
+      "label": "Radiology",
+      "portal": "Radiology Dept",
+      "evidence": "Radiology",
+      "portalLoaded": true,
+      "contentVisible": true,
+      "errorsDelta": 0,
+      "screenshot": "M4-wave-1-radiology.png"
+    },
+    {
+      "label": "Emergency",
+      "portal": "Emergency Room",
+      "evidence": "ER",
+      "portalLoaded": true,
+      "contentVisible": true,
+      "errorsDelta": 0,
+      "screenshot": "M4-wave-1-emergency.png"
+    },
+    {
+      "label": "Reception",
+      "portal": "Reception",
+      "evidence": "OPD",
+      "portalLoaded": true,
+      "contentVisible": true,
+      "errorsDelta": 0,
+      "screenshot": "M4-wave-1-reception.png"
+    },
+    {
+      "label": "Admission / Beds",
+      "portal": "Admission Desk",
+      "evidence": "Admission",
+      "portalLoaded": true,
+      "contentVisible": true,
+      "errorsDelta": 0,
+      "screenshot": "M4-wave-1-admissionbeds.png"
+    },
+    {
+      "label": "Discharge",
+      "portal": "Discharge Desk",
+      "evidence": "Discharge",
+      "portalLoaded": true,
+      "contentVisible": true,
+      "errorsDelta": 0,
+      "screenshot": "M4-wave-1-discharge.png"
+    },
+    {
+      "label": "Operation Theater",
+      "portal": "Operation Theater",
+      "evidence": "OT Room",
+      "portalLoaded": true,
+      "contentVisible": true,
+      "errorsDelta": 0,
+      "screenshot": "M4-wave-1-operationtheater.png"
+    },
+    {
+      "label": "Billing",
+      "portal": "Billing Dept",
+      "evidence": "Billing",
+      "portalLoaded": true,
+      "contentVisible": true,
+      "errorsDelta": 0,
+      "screenshot": "M4-wave-1-billing.png"
+    },
+    {
+      "label": "Insurance / TPA",
+      "portal": "TPA & Insurance",
+      "evidence": "Insurance",
+      "portalLoaded": true,
+      "contentVisible": true,
+      "errorsDelta": 0,
+      "screenshot": "M4-wave-1-insurancetpa.png"
+    },
+    {
+      "label": "Audit / Compliance",
+      "portal": "Audit & Compliance",
+      "evidence": "Compliance",
+      "portalLoaded": true,
+      "contentVisible": true,
+      "errorsDelta": 0,
+      "screenshot": "M4-wave-1-auditcompliance.png"
+    },
+    {
+      "label": "Patient Portal",
+      "portal": "Patient Portal",
+      "evidence": "AI Health",
+      "portalLoaded": true,
+      "contentVisible": true,
+      "errorsDelta": 0,
+      "screenshot": "M4-wave-1-patientportal.png"
+    }
+  ],
+  "probes": [
+    {
+      "name": "api-state",
+      "data": {
+        "patientCount": 18,
+        "anilPresent": true,
+        "anilAllergies": [
+          "Penicillin"
+        ],
+        "anilStayWard": "Surgical",
+        "anilNews2Hit": true,
+        "anilDuplicateBillFlag": true,
+        "kiranPresent": true,
+        "auditTotal": 82,
+        "labCount": 4,
+        "radCount": 3,
+        "rxCount": 4,
+        "dischargeCount": 2
+      }
+    },
+    {
+      "name": "legacy-stores",
+      "data": {
+        "anilER": 3,
+        "anilClaimScore": 72,
+        "anilOT": "Laparoscopic Appendectomy",
+        "anilNarc": "Morphine 10mg/mL",
+        "augmentin": [
+          "Penicillin",
+          "β-lactam"
+        ],
+        "anilInpatient": "SW-301"
+      }
+    },
+    {
+      "name": "persistence",
+      "keys": [
+        "kailash-admissionstore",
+        "kailash-authstore",
+        "kailash-billingstore",
+        "kailash-dischargestore",
+        "kailash-drugmasterstore",
+        "kailash-erstore",
+        "kailash-insurancestore",
+        "kailash-ipd",
+        "kailash-narcoticsstore",
+        "kailash-notifications",
+        "kailash-otstore",
+        "kailash-patientstore",
+        "kailash.api.v1.__bootstrap__",
+        "kailash.api.v1.audit_entries",
+        "kailash.api.v1.beds",
+        "kailash.api.v1.bills",
+        "kailash.api.v1.discharges",
+        "kailash.api.v1.drugs",
+        "kailash.api.v1.encounters",
+        "kailash.api.v1.er_cases",
+        "kailash.api.v1.ipd_stays",
+        "kailash.api.v1.lab_results",
+        "kailash.api.v1.mar_doses",
+        "kailash.api.v1.orders",
+        "kailash.api.v1.patients",
+        "kailash.api.v1.pharmacy_claims",
+        "kailash.api.v1.pharmacy_dispense",
+        "kailash.api.v1.pharmacy_narcotics",
+        "kailash.api.v1.prescriptions",
+        "kailash.api.v1.radiology_studies",
+        "kailash.api.v1.staff",
+        "kailash.api.v1.visits",
+        "kailash.api.v1.vitals",
+        "kailash.legacy-seed.anil-v4"
+      ]
+    }
+  ],
+  "summary": {
+    "total": 54,
+    "pass": 54,
+    "fail": 0,
+    "consoleErrors": 0
+  },
+  "assertions": [
+    {
+      "label": "Admin: portal loaded",
+      "pass": true
+    },
+    {
+      "label": "Admin: content evidence",
+      "pass": true
+    },
+    {
+      "label": "Quality: portal loaded",
+      "pass": true
+    },
+    {
+      "label": "Quality: content evidence",
+      "pass": true
+    },
+    {
+      "label": "Doctor: portal loaded",
+      "pass": true
+    },
+    {
+      "label": "Doctor: content evidence",
+      "pass": true
+    },
+    {
+      "label": "Nurse: portal loaded",
+      "pass": true
+    },
+    {
+      "label": "Nurse: content evidence",
+      "pass": true
+    },
+    {
+      "label": "Pharmacy: portal loaded",
+      "pass": true
+    },
+    {
+      "label": "Pharmacy: content evidence",
+      "pass": true
+    },
+    {
+      "label": "Laboratory: portal loaded",
+      "pass": true
+    },
+    {
+      "label": "Laboratory: content evidence",
+      "pass": true
+    },
+    {
+      "label": "Radiology: portal loaded",
+      "pass": true
+    },
+    {
+      "label": "Radiology: content evidence",
+      "pass": true
+    },
+    {
+      "label": "Emergency: portal loaded",
+      "pass": true
+    },
+    {
+      "label": "Emergency: content evidence",
+      "pass": true
+    },
+    {
+      "label": "Reception: portal loaded",
+      "pass": true
+    },
+    {
+      "label": "Reception: content evidence",
+      "pass": true
+    },
+    {
+      "label": "Admission / Beds: portal loaded",
+      "pass": true
+    },
+    {
+      "label": "Admission / Beds: content evidence",
+      "pass": true
+    },
+    {
+      "label": "Discharge: portal loaded",
+      "pass": true
+    },
+    {
+      "label": "Discharge: content evidence",
+      "pass": true
+    },
+    {
+      "label": "Operation Theater: portal loaded",
+      "pass": true
+    },
+    {
+      "label": "Operation Theater: content evidence",
+      "pass": true
+    },
+    {
+      "label": "Billing: portal loaded",
+      "pass": true
+    },
+    {
+      "label": "Billing: content evidence",
+      "pass": true
+    },
+    {
+      "label": "Insurance / TPA: portal loaded",
+      "pass": true
+    },
+    {
+      "label": "Insurance / TPA: content evidence",
+      "pass": true
+    },
+    {
+      "label": "Audit / Compliance: portal loaded",
+      "pass": true
+    },
+    {
+      "label": "Audit / Compliance: content evidence",
+      "pass": true
+    },
+    {
+      "label": "Patient Portal: portal loaded",
+      "pass": true
+    },
+    {
+      "label": "Patient Portal: content evidence",
+      "pass": true
+    },
+    {
+      "label": "Patient count >= 16",
+      "pass": true
+    },
+    {
+      "label": "Hero patient Anil present",
+      "pass": true
+    },
+    {
+      "label": "Anil allergies include Penicillin",
+      "pass": true
+    },
+    {
+      "label": "Anil IPD stay in Surgical ward",
+      "pass": true
+    },
+    {
+      "label": "NEWS2 = 5 vital present (Anil)",
+      "pass": true
+    },
+    {
+      "label": "Duplicate-charge AI flag on Anil bill",
+      "pass": true
+    },
+    {
+      "label": "Parallel inpatient Kiran present",
+      "pass": true
+    },
+    {
+      "label": "Audit trail >= 20 events",
+      "pass": true
+    },
+    {
+      "label": "Lab results seeded (>=2)",
+      "pass": true
+    },
+    {
+      "label": "Radiology studies seeded (>=1)",
+      "pass": true
+    },
+    {
+      "label": "Prescriptions seeded (>=2)",
+      "pass": true
+    },
+    {
+      "label": "Discharge initiated (>=1)",
+      "pass": true
+    },
+    {
+      "label": "ER triage: Anil ESI 3",
+      "pass": true
+    },
+    {
+      "label": "Insurance claim: denial-risk 72",
+      "pass": true
+    },
+    {
+      "label": "OT procedure: lap appendectomy",
+      "pass": true
+    },
+    {
+      "label": "Narcotic register: Morphine sign-out",
+      "pass": true
+    },
+    {
+      "label": "Drug master: Augmentin tagged Penicillin",
+      "pass": true
+    },
+    {
+      "label": "Inpatient store: Anil in SW-301",
+      "pass": true
+    },
+    {
+      "label": "Persisted localStorage keys >= 20",
+      "pass": true
+    },
+    {
+      "label": "Mock-API patients persisted",
+      "pass": true
+    },
+    {
+      "label": "Audit table persisted",
+      "pass": true
+    },
+    {
+      "label": "Auth persisted (sticky demo)",
+      "pass": true
+    }
+  ],
+  "errors": []
+}

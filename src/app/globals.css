@@ -1,0 +1,573 @@
+@import "tailwindcss";
+
+@theme inline {
+  /* Typography — Agentix HIMS, Stripe-inspired (see /DESIGN.md).
+     Inter (weight 300–700, `ss01` enabled globally) is the open-source stand-in
+     for Sohne. Numeric/tabular cells use `tabular-nums` (`.t-numeric`). */
+  --font-body:    "Inter", "SF Pro Display", "Segoe UI", system-ui, -apple-system, Arial, sans-serif;
+  --font-heading: "Inter", "SF Pro Display", "Segoe UI", system-ui, -apple-system, Arial, sans-serif;
+
+  /* Brand Colors — Agentix HIMS teal (logo `#0891B2`). The logo cyan is the
+     identity hue; `--color-primary` is its AA-safe action shade (cyan-700,
+     white-on-fill 5.4:1, as-text-on-white 5.4:1). The exact logo cyan lives in
+     `--color-primary-light` for vivid accents/tints/focus where contrast of
+     small text isn't at stake. Teal is reserved for CTAs/links; deep-navy
+     `--color-foreground` carries body text. `primary-dark` is the hover/press lift. */
+  --color-primary: #0E7490;          /* brand teal — primary CTA / links (AA on white) */
+  --color-primary-light: #0891B2;    /* exact Agentix logo cyan — vivid accents / focus */
+  --color-primary-dark: #155E75;     /* deep teal — CTA hover / active / press */
+  --color-primary-soft: rgba(8, 145, 178, 0.07);
+  --color-accent: #0E7490;           /* brand teal — links, emphasis */
+  --color-accent-soft: rgba(8, 145, 178, 0.10);
+  /* Brand amber — warm highlight accent. Energy/highlight only: fills, icons,
+     underlines. NEVER body text on white (amber on white fails AA). */
+  --color-brand-amber: #F59E0B;
+  --color-brand-amber-strong: #D97706;
+  --color-brand-amber-soft: rgba(245, 158, 11, 0.12);
+  /* Clinical-green — semantic positive/"stable" accent only (healthy vitals,
+     upward deltas). Kept distinct from `--color-success` so they never collide. */
+  --color-brand-green: #16A34A;
+  --color-brand-green-strong: #15803D;
+  --color-brand-green-soft: rgba(22, 163, 74, 0.08);
+  --color-brand-green-border: rgba(22, 163, 74, 0.18);
+  /* Legacy aliases kept coherent (now teal). */
+  --color-secondary: #06B6D4;
+  --color-secondary-light: #A5F3FC;
+
+  /* Gradients — restrained, single-hue teal (no rainbow blends) */
+  --gradient-primary: linear-gradient(135deg, #155E75 0%, #0E7490 100%);
+  --gradient-surface: linear-gradient(180deg, #FFFFFF 0%, #F6F9FC 100%);
+  --gradient-sidebar: linear-gradient(180deg, #FFFFFF 0%, #FFFFFF 100%);
+  --gradient-hero: linear-gradient(155deg, #083344 0%, #0E5063 55%, #083344 100%);
+  --gradient-card-hover: linear-gradient(135deg, rgba(8,145,178,0.03) 0%, rgba(8,145,178,0.03) 100%);
+
+  /* Surfaces — Stripe canvas ramp: crisp white cards on cool off-white */
+  --color-background: #F6F9FC;
+  --color-surface: #FFFFFF;
+  --color-surface-raised: #FCFCFD;
+  --color-surface-sunken: #F1F5F9;
+  --color-surface-glass: rgba(255, 255, 255, 0.72);
+
+  /* Cool neutral ramp — Linear/Vercel calibre. The single home for the
+     stray #0F172A / #64748B / #94A3B8 / #F8FAFC hexes scattered across
+     pages. Anchored to the deep-navy ink so neutrals read cool, not gray.
+     (Tailwind's default `neutral` is unused in this app, so this owns it.) */
+  --color-neutral-0:   #FFFFFF;
+  --color-neutral-25:  #FCFCFD;
+  --color-neutral-50:  #F6F9FC;
+  --color-neutral-100: #EDF1F6;
+  --color-neutral-200: #E3E8EE;
+  --color-neutral-300: #CFD7E0;
+  --color-neutral-400: #94A3B8;
+  --color-neutral-500: #64748d;
+  --color-neutral-600: #475569;
+  --color-neutral-700: #303D4D;
+  --color-neutral-800: #1B2738;
+  --color-neutral-900: #0d253d;
+
+  /* Text — Stripe deep-navy ink ramp (never pure black) */
+  --color-foreground: #0d253d;
+  --color-foreground-muted: #273951;
+  --color-foreground-lighter: #64748d;
+  --color-foreground-placeholder: #8792a6;
+
+  /* Borders — cool hairlines (inputs use a slightly cooler tone) */
+  --color-border: #E3E8EE;
+  --color-border-light: #EDF2F7;
+  --color-border-strong: #D5DCE5;    /* table dividers, active edges */
+  --color-border-hover: #A8C3DE;
+  --color-border-focus: #0891B2;
+
+  /* Status — PU semantic colors */
+  --color-success: #16A34A;
+  --color-success-light: #22C55E;
+  --color-success-bg: #DCFCE7;
+  --color-warning: #F59E0B;
+  --color-warning-light: #FBBF24;
+  --color-warning-bg: #FEF3C7;
+  --color-danger: #DC2626;
+  --color-danger-light: #EF4444;
+  --color-danger-strong: #B91C1C;
+  --color-danger-bg: #FEE2E2;
+  --color-success-strong: #15803D;
+  --color-info: #2563EB;
+  --color-info-bg: #DBEAFE;
+  /* Urgent — clinical tier between warning amber and danger red (burnt
+     orange). Lets StatusPill's `urgent` variant drop its hardcoded hex.
+     The ink tone (#C2410C) passes AA on white and on its own tint. */
+  --color-urgent: #C2410C;
+  --color-urgent-bg: #FFF4ED;
+
+  /* Shadow System — layered, ink-tinted elevation (Linear/Vercel calibre).
+     Two-layer (ambient + key) shadows tinted to the navy ink (#0d253d →
+     rgba(13,37,61,…)) read as crisp depth, not a muddy black drop. Borders
+     still carry primary separation: hairline first, shadow second. */
+  --shadow-xs:         0 1px 2px rgba(13,37,61,0.05);
+  --shadow-sm:         0 1px 2px rgba(13,37,61,0.06), 0 1px 1px rgba(13,37,61,0.04);
+  --shadow-md:         0 2px 4px rgba(13,37,61,0.05), 0 4px 12px rgba(13,37,61,0.07);
+  --shadow-lg:         0 4px 8px rgba(13,37,61,0.05), 0 12px 28px rgba(13,37,61,0.10);
+  --shadow-xl:         0 8px 16px rgba(13,37,61,0.06), 0 24px 48px rgba(13,37,61,0.12);
+  --shadow-2xl:        0 16px 32px rgba(13,37,61,0.08), 0 32px 64px rgba(13,37,61,0.16);
+  --shadow-card:       0 1px 2px rgba(13,37,61,0.06), 0 1px 1px rgba(13,37,61,0.04);
+  --shadow-card-hover: 0 2px 4px rgba(13,37,61,0.05), 0 4px 12px rgba(13,37,61,0.07);
+  --shadow-elevated:   0 4px 8px rgba(8,145,178,0.06), 0 12px 28px rgba(8,145,178,0.10);
+  --shadow-glow:       0 0 0 4px rgba(8, 145, 178, 0.18);
+  --shadow-glow-sm:    0 0 0 3px rgba(8, 145, 178, 0.14);
+  --shadow-focus:      0 0 0 2px var(--color-surface), 0 0 0 4px var(--color-primary);
+  --shadow-sidebar:    1px 0 0 rgba(16,24,40,0.06);
+  --shadow-header:     0 1px 0 rgba(16,24,40,0.06);
+  --shadow-modal:      0 24px 56px rgba(13,37,61,0.18), 0 6px 16px rgba(13,37,61,0.08);
+  --shadow-dropdown:   0 8px 24px rgba(13,37,61,0.10), 0 1px 3px rgba(13,37,61,0.06);
+
+  /* Z-index scale */
+  --z-dropdown: 30;
+  --z-tooltip:  40;
+  --z-modal:    50;
+  --z-toast:    60;
+  --z-overlay:  70;
+
+  /* Animation */
+  --duration-instant: 80ms;
+  --duration-fast:    150ms;
+  --duration-normal:  220ms;
+  --duration-slow:    350ms;
+  --duration-slower:  500ms;
+  --ease-spring:  cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-out:     cubic-bezier(0.0, 0, 0.2, 1);
+  --ease-in-out:  cubic-bezier(0.4, 0, 0.2, 1);
+  /* Interaction motion — named so every row/card animates identically
+     (drives the .u-lift / .u-press / .u-row helpers + framer staggers). */
+  --stagger-step: 28ms;
+  --lift-hover:   translateY(-2px);
+  --press-scale:  scale(0.985);
+
+  /* Typography scale */
+  --font-size-2xs: 0.6875rem;
+  --font-size-xs:  0.75rem;
+  --font-size-sm:  0.875rem;
+  --font-size-base: 1rem;
+  --font-size-lg:  1.125rem;
+  --font-size-xl:  1.25rem;
+  --font-size-2xl: 1.5rem;
+  --font-size-3xl: 1.875rem;
+  --font-size-4xl: 2.25rem;
+
+  /* Border Radius — Agentix HIMS scale (interactive controls = 12px) */
+  --radius-sm:  0.5rem;    /* 8px */
+  --radius-md:  0.75rem;   /* 12px — buttons, inputs, interactive controls */
+  --radius-lg:  1rem;      /* 16px */
+  --radius-xl:  1.25rem;   /* 20px — cards */
+  --radius-2xl: 1.5rem;    /* 24px */
+  --radius-3xl: 2rem;      /* 32px */
+  --radius-full: 9999px;
+
+  /* Fonts */
+  --font-sans: var(--font-body);
+  --font-heading-stack: var(--font-heading);
+
+  /* Keyframe names */
+  --animate-fade-in:    fadeIn 0.25s var(--ease-out) forwards;
+  --animate-slide-up:   slideUp 0.35s var(--ease-spring) forwards;
+  --animate-scale-in:   scaleIn 0.2s var(--ease-spring) forwards;
+  --animate-shimmer:    shimmer 1.6s infinite linear;
+}
+
+/* ── Intake (Patient Check-in) scoped theme ──────────────────
+   The patient-facing check-in adopts a calm medical teal + health-green
+   palette, distinct from the blue clinician app. Scoped to `.intake-theme`
+   so global tokens (and every other screen) stay blue. Token-driven: the
+   wizard chrome reads these vars, so overriding them re-skins it cleanly. */
+.intake-theme {
+  --color-primary: #0891B2;          /* calm cyan — primary action */
+  --color-primary-light: #06B6D4;
+  --color-primary-dark: #0E7490;     /* hover / active */
+  --color-primary-soft: rgba(8, 145, 178, 0.07);
+  --color-accent: #0E7490;
+  --color-accent-soft: rgba(8, 145, 178, 0.10);
+  --color-secondary: #06B6D4;
+  --color-border-focus: #22D3EE;
+  --color-background: #F1F6F9;        /* cool, clean medical surface */
+  --gradient-primary: linear-gradient(135deg, #0E7490 0%, #0891B2 100%);
+  --shadow-elevated: 0 12px 32px rgba(8, 145, 178, 0.10), 0 1px 3px rgba(0, 0, 0, 0.06);
+  --shadow-glow: 0 0 0 4px rgba(34, 211, 238, 0.18);
+  --shadow-glow-sm: 0 0 0 3px rgba(34, 211, 238, 0.14);
+}
+
+/* ── Keyframes ─────────────────────────────────────────── */
+@keyframes fadeIn  { from { opacity: 0 } to { opacity: 1 } }
+@keyframes slideUp { from { opacity: 0; transform: translateY(12px) } to { opacity: 1; transform: translateY(0) } }
+@keyframes scaleIn { from { opacity: 0; transform: scale(0.96) } to { opacity: 1; transform: scale(1) } }
+@keyframes shimmer { 0% { background-position: -200% 0 } 100% { background-position: 200% 0 } }
+@keyframes dot-pulse { 0%, 100% { opacity: 1 } 50% { opacity: 0.4 } }
+@keyframes pulse-ring {
+  0% { transform: scale(0.9); opacity: 0.8 }
+  70% { transform: scale(1.3); opacity: 0 }
+  100% { transform: scale(1.3); opacity: 0 }
+}
+@keyframes float {
+  0%, 100% { transform: translateY(0px) }
+  50% { transform: translateY(-8px) }
+}
+
+/* ── Base Reset ───────────────────────────────────────────
+   These element defaults MUST live in @layer base. In Tailwind v4
+   utilities live in a cascade layer, and unlayered CSS always wins
+   over layered CSS regardless of specificity — so an unlayered
+   `h1 { color }` rule would silently override `text-white` / any
+   text-colour utility on every heading. Layering keeps utilities
+   authoritative (a heading can still be recoloured per-instance). */
+@layer base {
+  *, *::before, *::after { box-sizing: border-box; }
+
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 64px; /* height of sticky nav (h-16) */
+  }
+
+  html, body {
+    height: 100%;
+    background-color: var(--color-background);
+    color: var(--color-foreground-muted);
+    font-family: var(--font-sans);
+    /* Stripe/Sohne signature: stylistic set ss01 (single-story a) on every role. */
+    font-feature-settings: "ss01";
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-size: 16px;
+    line-height: 1.6;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading-stack);
+    color: var(--color-foreground);
+    /* Calibri/Carlito ship 400 + 700 only — headings use the bold master. */
+    font-weight: 700;
+    letter-spacing: -0.011em;
+    line-height: 1.22;
+  }
+}
+
+/* ── Scrollbar ──────────────────────────────────────────── */
+::-webkit-scrollbar { width: 5px; height: 5px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: #D1D9E0; border-radius: 999px; }
+::-webkit-scrollbar-thumb:hover { background: #94A3B8; }
+
+/* ── Skip Link ──────────────────────────────────────────── */
+.skip-link {
+  position: absolute;
+  top: -100%;
+  left: 16px;
+  z-index: 9999;
+  padding: 8px 16px;
+  background: var(--color-primary);
+  color: #fff;
+  font-size: 0.875rem;
+  font-weight: 600;
+  border-radius: 0 0 8px 8px;
+  text-decoration: none;
+  transition: top 0.15s;
+}
+.skip-link:focus { top: 0; }
+
+/* ── Focus States ─────────────────────────────────────────
+   Two-tone ring (surface gap + brand halo) reads on any surface —
+   white, tinted chip, or dark hero. The transparent outline stays
+   present so forced-colors / Windows high-contrast still shows a ring. */
+:focus-visible {
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+  box-shadow: var(--shadow-focus);
+  border-radius: var(--radius-md);
+}
+
+/* ── Semantic Type Scale ─────────────────────────────────────
+   Single source of truth for typography. Pages should reference
+   these classes instead of arbitrary `text-[Npx]`. The readable
+   floor is 14px for body and 12px for captions/labels — nothing
+   smaller, to honour the large-readable-typography + a11y goals.
+   All sizes use rem so they respect the user's root font size. */
+.t-display { font-size: 2.25rem;  line-height: 1.12; font-weight: 700; letter-spacing: -0.025em; }  /* 36px */
+.t-h1      { font-size: 1.875rem; line-height: 1.18; font-weight: 700; letter-spacing: -0.021em; }  /* 30px */
+.t-h2      { font-size: 1.5rem;   line-height: 1.25; font-weight: 700; letter-spacing: -0.016em; }  /* 24px */
+.t-h3      { font-size: 1.25rem;  line-height: 1.3;  font-weight: 700; letter-spacing: -0.01em; }   /* 20px */
+.t-title   { font-size: 1.0625rem;line-height: 1.35; font-weight: 600; letter-spacing: -0.006em; }  /* 17px */
+.t-body-lg { font-size: 1rem;     line-height: 1.6;  font-weight: 400; }                            /* 16px */
+.t-body    { font-size: 0.875rem; line-height: 1.55; font-weight: 400; }                            /* 14px — readable floor */
+.t-label   { font-size: 0.8125rem;line-height: 1.3;  font-weight: 600; }                            /* 13px */
+.t-caption { font-size: 0.75rem;  line-height: 1.4;  font-weight: 500; }                            /* 12px — smallest allowed */
+.t-overline{ font-size: 0.75rem;  line-height: 1.3;  font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; }
+.t-numeric { font-variant-numeric: tabular-nums; font-weight: 600; }
+/* Stat value — big tabular figure for KPI tiles (replaces hand-rolled text-2xl). */
+.t-kpi     { font-size: 1.75rem; line-height: 1; font-weight: 700; letter-spacing: -0.02em; font-variant-numeric: tabular-nums; } /* 28px */
+/* Dense table figure — tabular, tightened, for data cells. */
+.t-mono-num{ font-variant-numeric: tabular-nums; letter-spacing: -0.01em; }
+/* Editorial hero — opt-in thin display. PATIENT-FACING / marketing heroes ONLY;
+   clinical surfaces keep weight 700 for ward glanceability (see DESIGN.md). */
+.t-display-thin { font-weight: 300; letter-spacing: -0.03em; }
+
+/* Responsive display: scale hero headings up on larger screens. */
+@media (min-width: 640px)  { .t-display { font-size: 3rem; } }
+@media (min-width: 1024px) { .t-display { font-size: 3.5rem; } }
+
+/* ── White-first surface / ink helpers ───────────────────────
+   The `--color-*` tokens already generate Tailwind utilities
+   (bg-surface, text-foreground, border-border, text-primary…).
+   These named helpers cover the few compound treatments the
+   white-first language repeats, so pages stop hand-rolling them. */
+.surface        { background: var(--color-surface); border: 1px solid var(--color-border); }
+.surface-sunken { background: var(--color-surface-sunken); }
+.hairline       { border: 1px solid var(--color-border); }
+.hairline-t     { border-top: 1px solid var(--color-border); }
+.hairline-b     { border-bottom: 1px solid var(--color-border); }
+.ink            { color: var(--color-foreground); }
+.ink-muted      { color: var(--color-foreground-muted); }
+.ink-subtle     { color: var(--color-foreground-lighter); }
+.accent-ink     { color: var(--color-primary); }
+
+/* ── Surface depth & interaction utilities ───────────────────
+   Opt-in compound helpers for the elevated language: a raised
+   secondary surface, an Apple-style inset hairline, and the
+   row/card micro-interactions (hover lift, press, row hover) that
+   give worklists their Linear/Arc feel. All transform/opacity only
+   — the global prefers-reduced-motion block neutralises the timing. */
+.surface-raised { background: var(--color-surface-raised); box-shadow: var(--shadow-xs); }
+.hairline-inset { box-shadow: inset 0 1px 0 rgba(255,255,255,0.7), inset 0 0 0 1px var(--color-border); }
+
+.u-lift  { transition: transform var(--duration-normal) var(--ease-spring), box-shadow var(--duration-normal) var(--ease-spring); }
+.u-lift:hover  { transform: var(--lift-hover); box-shadow: var(--shadow-card-hover); }
+.u-press { transition: transform var(--duration-fast) var(--ease-spring); }
+.u-press:active { transform: var(--press-scale); }
+.u-row   { transition: background var(--duration-fast) var(--ease-out), box-shadow var(--duration-fast) var(--ease-out); }
+.u-row:hover { background: var(--color-surface-sunken); }
+
+/* Vertical rhythm helpers — kill ad-hoc space-y drift (8pt rhythm). */
+.stack-2 > * + * { margin-top: 0.5rem; }
+.stack-3 > * + * { margin-top: 0.75rem; }
+.stack-4 > * + * { margin-top: 1rem; }
+.stack-6 > * + * { margin-top: 1.5rem; }
+
+/* Soft semantic chips — white-first: tint background + readable ink,
+   used for status pills so colour is never the only signal. */
+.chip            { display: inline-flex; align-items: center; gap: 0.375rem; padding: 0.125rem 0.5rem; border-radius: var(--radius-full); font-size: 0.75rem; font-weight: 600; line-height: 1.4; }
+.chip-neutral    { background: var(--color-surface-sunken); color: var(--color-foreground-muted); }
+.chip-accent     { background: var(--color-accent-soft); color: var(--color-primary); }
+.chip-success    { background: var(--color-success-bg); color: var(--color-success); }
+.chip-warning    { background: var(--color-warning-bg); color: var(--color-warning); }
+.chip-danger     { background: var(--color-danger-bg); color: var(--color-danger); }
+.chip-info       { background: var(--color-info-bg); color: var(--color-info); }
+
+/* ── Tap target helper ───────────────────────────────────────
+   Google-level a11y: interactive controls should be ≥44×44px on
+   touch. Apply `.tap` to icon-only buttons / compact controls. */
+.tap { min-width: 2.75rem; min-height: 2.75rem; }
+@media (pointer: fine) {
+  /* On precise pointers (desktop mouse) compact controls are fine. */
+  .tap { min-width: auto; min-height: auto; }
+}
+
+/* ── HMS Card System (shadow-based, no heavy borders) ────── */
+
+/* Base card — hairline border first, soft shadow second (enterprise-minimal) */
+.hms-card {
+  background: var(--color-surface);
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow-card);
+  border: 1px solid var(--color-border);
+  transition: box-shadow var(--duration-normal) var(--ease-spring),
+              border-color var(--duration-normal) var(--ease-spring),
+              transform var(--duration-normal) var(--ease-spring);
+}
+
+/* Raised card — more prominent elevation */
+.hms-card-raised {
+  background: var(--color-surface);
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow-md);
+  border: 1px solid var(--color-border);
+}
+
+/* Interactive card — lifts on hover */
+.hms-card-interactive {
+  background: var(--color-surface);
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow-card);
+  border: 1px solid var(--color-border);
+  cursor: pointer;
+  transition: box-shadow var(--duration-normal) var(--ease-spring),
+              border-color var(--duration-normal) var(--ease-spring),
+              transform var(--duration-normal) var(--ease-spring);
+}
+.hms-card-interactive:hover {
+  box-shadow: var(--shadow-card-hover);
+  border-color: var(--color-border-hover);
+  transform: translateY(-2px);
+}
+
+/* Elevated card — soft blue-tinted depth */
+.hms-card-elevated {
+  background: var(--color-surface);
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow-elevated);
+  border: 1px solid rgba(30, 58, 138, 0.08);
+}
+
+/* Glass card — frosted glass effect */
+.hms-card-glass {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow-md);
+  border: 1px solid rgba(255, 255, 255, 0.6);
+}
+
+/* Stat card — hairline border + restrained hover lift */
+.hms-stat-card {
+  background: var(--color-surface);
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow-card);
+  border: 1px solid var(--color-border);
+  padding: 1.25rem;
+  transition: box-shadow var(--duration-normal) var(--ease-spring),
+              border-color var(--duration-normal) var(--ease-spring);
+}
+.hms-stat-card:hover { box-shadow: var(--shadow-md); border-color: var(--color-border-hover); }
+
+/* ── Gradient Utilities ──────────────────────────────────── */
+.gradient-primary {
+  background: var(--gradient-primary);
+}
+.gradient-hero {
+  background: var(--gradient-hero);
+}
+.gradient-text {
+  background: var(--gradient-primary);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+.gradient-surface {
+  background: var(--gradient-surface);
+}
+
+/* ── Shimmer Loader ─────────────────────────────────────── */
+.shimmer {
+  background: linear-gradient(90deg, #F1F5F9 0%, #E8EDF2 50%, #F1F5F9 100%);
+  background-size: 200% 100%;
+  animation: shimmer 1.6s infinite linear;
+}
+
+/* ── Status Indicators ──────────────────────────────────── */
+.status-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  display: inline-block;
+  flex-shrink: 0;
+}
+.status-dot.online  { background: var(--color-success); box-shadow: 0 0 0 2px var(--color-success-bg); }
+.status-dot.busy    { background: var(--color-warning); box-shadow: 0 0 0 2px var(--color-warning-bg); }
+.status-dot.offline { background: #94A3B8; }
+.status-dot.pulse   { animation: dot-pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite; }
+
+.live-ring {
+  position: absolute;
+  inset: -3px;
+  border-radius: 50%;
+  border: 2px solid var(--color-success);
+  animation: pulse-ring 2s ease-out infinite;
+}
+
+/* ── AI Panel Styles — brand teal ───────────────── */
+.ai-glow {
+  box-shadow: 0 0 0 4px rgba(8,145,178, 0.10), 0 2px 8px rgba(16,24,40,0.05);
+}
+.ai-card {
+  background: linear-gradient(135deg, #ECFEFF 0%, #F7FEFF 100%);
+  border: 1px solid rgba(8,145,178, 0.16);
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow-card);
+}
+.ai-badge {
+  background: linear-gradient(135deg, #155E75, #0E7490);
+  color: white;
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  padding: 2px 7px;
+  border-radius: 999px;
+}
+
+/* ── Float Animation ────────────────────────────────────── */
+.float { animation: float 4s ease-in-out infinite; }
+.float-delay-1 { animation-delay: 0.5s; }
+.float-delay-2 { animation-delay: 1s; }
+.float-delay-3 { animation-delay: 1.5s; }
+
+/* ── Reduced Motion ─────────────────────────────────────── */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* ── Select / dropdown ───────────────────────────────────────
+   Single source of truth for native <select> styling. The native
+   OS arrow is suppressed (appearance:none) and replaced with a
+   crisp chevron drawn as a right-anchored background image, so it
+   can never crowd the right edge regardless of the element width.
+   The Select component (src/components/ui/Select.tsx) pairs this
+   with an enforced right padding (pr-9) that reserves room for it. */
+.ui-select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='16'%20height='16'%20viewBox='0%200%2024%2024'%20fill='none'%20stroke='%23667085'%20stroke-width='2.25'%20stroke-linecap='round'%20stroke-linejoin='round'%3E%3Cpolyline%20points='6%209%2012%2015%2018%209'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 0.7rem center;
+  background-size: 1rem 1rem;
+  print-color-adjust: exact;
+}
+.ui-select::-ms-expand { display: none; }
+
+/* ── Intake kiosk inputs ─────────────────────────────────────
+   These inputs are full-bleed inside cards, so the global
+   offset focus-visible outline would overflow the card. We
+   suppress it (the parent card shows a contained inset ring)
+   and remove number-input spinners. */
+.intake-input:focus,
+.intake-input:focus-visible { outline: none; }
+.intake-input::-webkit-outer-spin-button,
+.intake-input::-webkit-inner-spin-button { -webkit-appearance: none; margin: 0; }
+.intake-input[type="number"] { -moz-appearance: textfield; }
+
+/* ── CMO Keyframes (global — used by DrillCard, AlertRow, etc.) ── */
+@keyframes cmo-slide-in-right {
+  from { transform: translateX(100%); opacity: 0; }
+  to   { transform: translateX(0);    opacity: 1; }
+}
+@keyframes cmo-fade-up {
+  from { opacity: 0; transform: translateY(8px); }
+  to   { opacity: 1; transform: translateY(0);   }
+}
+@keyframes cmo-live-pulse {
+  0%, 100% { opacity: 1; transform: scale(1);    }
+  50%       { opacity: 0.6; transform: scale(1.3); }
+}
+@keyframes cmo-new-alert {
+  0%   { background-color: rgba(8,145,178,0.10); }
+  100% { background-color: transparent;            }
+}
+@keyframes cmo-count-up {
+  from { opacity: 0; transform: translateY(4px); }
+  to   { opacity: 1; transform: translateY(0);   }
+}
+
+.cmo-drawer-enter { animation: cmo-slide-in-right 220ms cubic-bezier(0.16,1,0.3,1) forwards; }
+.cmo-fade-up      { animation: cmo-fade-up 200ms cubic-bezier(0.16,1,0.3,1) forwards; }
+.cmo-live-pulse   { animation: cmo-live-pulse 2s ease-in-out infinite; }
+.cmo-new-alert    { animation: cmo-new-alert 2s ease-out forwards; }
+.cmo-kpi-in       { animation: cmo-count-up 300ms cubic-bezier(0.16,1,0.3,1) forwards; }

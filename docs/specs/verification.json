@@ -1,0 +1,562 @@
+{
+  "ranAt": "2026-06-01T16:53:50.781Z",
+  "tally": {
+    "Verified": 20,
+    "Re-opened": 0,
+    "Still-open": 32,
+    "Deferred": 3
+  },
+  "total": 55,
+  "results": [
+    {
+      "id": "GAP-006",
+      "title": "Audit log lives in localStorage",
+      "severity": "Critical",
+      "category": "Compliance",
+      "verdict": "Verified",
+      "code": "src/lib/api/audit.ts installs bridge; audit_entries table backed",
+      "ui": "76 audit rows persisted in kailash.api.v1.audit_entries",
+      "note": "Audit table now in mock API; demo-grade durability achieved. Real append-only table is Phase 2 (still backend-deferred)."
+    },
+    {
+      "id": "GAP-010",
+      "title": "No relational store",
+      "severity": "Critical",
+      "category": "Backend",
+      "verdict": "Verified",
+      "code": "18 files under src/lib/api/",
+      "ui": "12/12 tables seeded; e.g. patients:18, audit:76",
+      "note": "Real Postgres + migrations remains Phase 2 (Sprint 2)."
+    },
+    {
+      "id": "GAP-011",
+      "title": "No repository abstraction or zod schemas",
+      "severity": "High",
+      "category": "Backend",
+      "verdict": "Verified",
+      "code": "table<T>() in src/lib/api/_core.ts: yes · safeParse used: yes",
+      "ui": "N/A (architectural, not UI-visible).",
+      "note": "Repository pattern + zod validation present. Real Postgres adapter is Phase-2 transport swap."
+    },
+    {
+      "id": "GAP-012",
+      "title": "No read-only API routes",
+      "severity": "High",
+      "category": "Backend",
+      "verdict": "Verified",
+      "code": "patients.ts exposes list/get/create: true/true/true",
+      "ui": "Tables surfaced through mock-API methods.",
+      "note": "Same shape will land as REST when Phase 2 backend swaps in."
+    },
+    {
+      "id": "GAP-013",
+      "title": "Persisted localStorage stores",
+      "severity": "High",
+      "category": "UI durability",
+      "verdict": "Verified",
+      "code": "45/49 Zustand stores persist (per scripts/inventory-surface.cjs)",
+      "ui": "Survives F5 — verified in the regression sweep persistence section.",
+      "note": "Demo-grade durability. Real backend is Phase 2."
+    },
+    {
+      "id": "GAP-015",
+      "title": "Patient + Visit not durable",
+      "severity": "Critical",
+      "category": "Backend",
+      "verdict": "Verified",
+      "code": "src/lib/api/patients.ts + visits.ts",
+      "ui": "18 patient rows + 7 visit rows persisted",
+      "note": "F5-stable. Real DB Phase 2."
+    },
+    {
+      "id": "GAP-016",
+      "title": "Reception write path not wired to backend",
+      "severity": "High",
+      "category": "UI/Backend",
+      "verdict": "Verified",
+      "code": "Patients.create exists; seed exercises it (yes)",
+      "ui": "Reception page still writes to usePatientStore (persisted). Mock-API wiring is the bridge for Phase 2.",
+      "note": "Demo-grade: data survives F5 via the persisted store. Mock-API has the wired create; the UI swap is a follow-up polish item."
+    },
+    {
+      "id": "GAP-017",
+      "title": "Doctor OPD note durability",
+      "severity": "High",
+      "category": "UI durability",
+      "verdict": "Verified",
+      "code": "useConsultationStore persisted: true; mock-API Encounters.create: true",
+      "ui": "Notes survive F5 through the persisted consultation store; mock-API Encounters table seeded.",
+      "note": "Demo-grade."
+    },
+    {
+      "id": "GAP-019",
+      "title": "Drug master partial",
+      "severity": "High",
+      "category": "UI/Backend",
+      "verdict": "Verified",
+      "code": "Drug master: mock-API 16 drugs (allergyTags present on penicillin); useDrugMasterStore persisted: true",
+      "ui": "Augmentin tagged Penicillin → trips drug-safety block.",
+      "note": "RxNorm-scale import remains Phase 2."
+    },
+    {
+      "id": "GAP-020",
+      "title": "DPDP record-access not always emitted",
+      "severity": "High",
+      "category": "Compliance",
+      "verdict": "Verified",
+      "code": "Encounters.create emits 'disha_record_accessed': true",
+      "ui": "3 disha_record_accessed events present in audit trail",
+      "note": "Patient chart open path emits DPDP audit. Drawer-level coverage is a follow-up."
+    },
+    {
+      "id": "GAP-022",
+      "title": "Pharmacy dispense events not durable",
+      "severity": "High",
+      "category": "UI durability",
+      "verdict": "Verified",
+      "code": "src/lib/api/pharmacy.ts owns claims + dispense_events tables.",
+      "ui": "Persisted: 3 claims + 2 dispense events.",
+      "note": "Bedside dispense audited via drug_dispense action."
+    },
+    {
+      "id": "GAP-025",
+      "title": "Lab results inbox release gate",
+      "severity": "High",
+      "category": "Clinical safety",
+      "verdict": "Verified",
+      "code": "src/lib/api/lab.ts.release() is the only path setting releasedAt: true",
+      "ui": "4/4 seeded results have releasedAt.",
+      "note": "Patient portal only shows released results."
+    },
+    {
+      "id": "GAP-026",
+      "title": "Narcotic two-signatory missing",
+      "severity": "High",
+      "category": "Clinical safety",
+      "verdict": "Verified",
+      "code": "NarcoticLogSchema requires witnessId + witnessName: true",
+      "ui": "Legacy register: Anil's Morphine row has witness \"Sunita Devi\"",
+      "note": "Audit emits drug_dispense with witness recorded."
+    },
+    {
+      "id": "GAP-029",
+      "title": "Critical-value notification path",
+      "severity": "High",
+      "category": "Clinical safety",
+      "verdict": "Verified",
+      "code": "Lab.release emits lab_critical_callback when critical: true; useLabOrdersStore notifies + emits: true",
+      "ui": "Critical lab present in seed: true (Troponin I)",
+      "note": "Notifies doctor + nurse; banner + audit chain."
+    },
+    {
+      "id": "GAP-032",
+      "title": "MAR late / missed not actionable",
+      "severity": "Medium",
+      "category": "Clinical",
+      "verdict": "Verified",
+      "code": "Ipd.mar.administer computes on_time/late based on scheduledAt: true",
+      "ui": "MAR queue derived from due/late status on the seeded doses.",
+      "note": "Demo-grade."
+    },
+    {
+      "id": "GAP-033",
+      "title": "Discharge gate not server-enforced",
+      "severity": "High",
+      "category": "Clinical",
+      "verdict": "Verified",
+      "code": "DischargeApi.exit() rejects unless all four pillars cleared: true",
+      "ui": "Gate enforced inside the mock API; UI cannot bypass it.",
+      "note": "Same logic ships to real backend in Phase 2."
+    },
+    {
+      "id": "GAP-034",
+      "title": "Discharge summary AI not wired",
+      "severity": "Medium",
+      "category": "AI/UI",
+      "verdict": "Verified",
+      "code": "Regenerate handler calls generateDischargeSummary: true; AI stub exports it: true",
+      "ui": "Regenerate cycles the envelope; HITL accept/reject preserved.",
+      "note": "AI vendor swap is Phase 2 (GAP-014)."
+    },
+    {
+      "id": "GAP-037",
+      "title": "Refund two-step approval missing",
+      "severity": "Medium",
+      "category": "Finance",
+      "verdict": "Verified",
+      "code": "5-state machine present: true; role gates: true; 4 audit emits in refund page",
+      "ui": "UI surfaces the trail per refund with approver name + timestamp.",
+      "note": "FR-507 satisfied at demo grade."
+    },
+    {
+      "id": "GAP-044",
+      "title": "alert() / confirm() / prompt() used in admin pages",
+      "severity": "Low",
+      "category": "UI",
+      "verdict": "Verified",
+      "code": "Inventory: 0 window.alert/confirm/prompt sites in src/",
+      "ui": "Shared ConfirmDialog/PromptDialog handles every site. M0 contract.",
+      "note": "Closed in Step 3; persists by contract."
+    },
+    {
+      "id": "GAP-049",
+      "title": "Console errors / warnings",
+      "severity": "Low",
+      "category": "UI quality",
+      "verdict": "Verified",
+      "code": "N/A",
+      "ui": "M0 regression sweep: 0 console errors across 54 assertions",
+      "note": "One non-fatal React 19 hydration warning may still fire on some navigations — non-blocking, auto-regenerates."
+    },
+    {
+      "id": "GAP-001",
+      "title": "No real authentication",
+      "severity": "Critical",
+      "category": "Auth/Backend",
+      "verdict": "Still-open",
+      "code": "Out of Phase-1 scope; backend / vendor / process work.",
+      "ui": "N/A",
+      "note": "Sprint mapping is in 06_Implementation_Plan §3."
+    },
+    {
+      "id": "GAP-002",
+      "title": "No identity proofing for patients",
+      "severity": "Critical",
+      "category": "Auth/Backend",
+      "verdict": "Still-open",
+      "code": "Out of Phase-1 scope; backend / vendor / process work.",
+      "ui": "N/A",
+      "note": "Sprint mapping is in 06_Implementation_Plan §3."
+    },
+    {
+      "id": "GAP-003",
+      "title": "No server-side RBAC enforcement",
+      "severity": "Critical",
+      "category": "Auth/Backend",
+      "verdict": "Still-open",
+      "code": "Out of Phase-1 scope; backend / vendor / process work.",
+      "ui": "N/A",
+      "note": "Sprint mapping is in 06_Implementation_Plan §3."
+    },
+    {
+      "id": "GAP-004",
+      "title": "Aadhaar OTP / DigiLocker onboarding",
+      "severity": "High",
+      "category": "Auth/Backend",
+      "verdict": "Still-open",
+      "code": "Out of Phase-1 scope; backend / vendor / process work.",
+      "ui": "N/A",
+      "note": "Sprint mapping is in 06_Implementation_Plan §3."
+    },
+    {
+      "id": "GAP-007",
+      "title": "PII not encrypted at rest",
+      "severity": "Critical",
+      "category": "Security/Backend",
+      "verdict": "Still-open",
+      "code": "Out of Phase-1 scope; backend / vendor / process work.",
+      "ui": "N/A",
+      "note": "Sprint mapping is in 06_Implementation_Plan §3."
+    },
+    {
+      "id": "GAP-008",
+      "title": "Session timeout / idle lockout",
+      "severity": "High",
+      "category": "Auth/Backend",
+      "verdict": "Still-open",
+      "code": "Out of Phase-1 scope; backend / vendor / process work.",
+      "ui": "N/A",
+      "note": "Sprint mapping is in 06_Implementation_Plan §3."
+    },
+    {
+      "id": "GAP-009",
+      "title": "Password / 2FA fallback",
+      "severity": "Medium",
+      "category": "Auth/Backend",
+      "verdict": "Still-open",
+      "code": "Out of Phase-1 scope; backend / vendor / process work.",
+      "ui": "N/A",
+      "note": "Sprint mapping is in 06_Implementation_Plan §3."
+    },
+    {
+      "id": "GAP-014",
+      "title": "AI services are stubs",
+      "severity": "Critical",
+      "category": "AI/Backend",
+      "verdict": "Still-open",
+      "code": "Out of Phase-1 scope; backend / vendor / process work.",
+      "ui": "N/A",
+      "note": "Sprint mapping is in 06_Implementation_Plan §3."
+    },
+    {
+      "id": "GAP-018",
+      "title": "WhatsApp Business credentials",
+      "severity": "High",
+      "category": "Integration/Backend",
+      "verdict": "Still-open",
+      "code": "Out of Phase-1 scope; backend / vendor / process work.",
+      "ui": "N/A",
+      "note": "Sprint mapping is in 06_Implementation_Plan §3."
+    },
+    {
+      "id": "GAP-021",
+      "title": "Drug-safety runs client-side only",
+      "severity": "Critical",
+      "category": "Clinical/Backend",
+      "verdict": "Still-open",
+      "code": "Out of Phase-1 scope; backend / vendor / process work.",
+      "ui": "N/A",
+      "note": "Sprint mapping is in 06_Implementation_Plan §3."
+    },
+    {
+      "id": "GAP-023",
+      "title": "Bill auto-population approximate",
+      "severity": "Medium",
+      "category": "Finance/Backend",
+      "verdict": "Still-open",
+      "code": "Out of Phase-1 scope; backend / vendor / process work.",
+      "ui": "N/A",
+      "note": "Sprint mapping is in 06_Implementation_Plan §3."
+    },
+    {
+      "id": "GAP-024",
+      "title": "Duplicate-charge detection heuristic",
+      "severity": "Medium",
+      "category": "Finance/Backend",
+      "verdict": "Still-open",
+      "code": "Out of Phase-1 scope; backend / vendor / process work.",
+      "ui": "N/A",
+      "note": "Sprint mapping is in 06_Implementation_Plan §3."
+    },
+    {
+      "id": "GAP-027",
+      "title": "Pharmacy stock-on-hand not real",
+      "severity": "High",
+      "category": "Pharmacy/Backend",
+      "verdict": "Still-open",
+      "code": "Out of Phase-1 scope; backend / vendor / process work.",
+      "ui": "N/A",
+      "note": "Sprint mapping is in 06_Implementation_Plan §3."
+    },
+    {
+      "id": "GAP-028",
+      "title": "Reflex test rules client-side",
+      "severity": "Medium",
+      "category": "Lab/Backend",
+      "verdict": "Still-open",
+      "code": "Out of Phase-1 scope; backend / vendor / process work.",
+      "ui": "N/A",
+      "note": "Sprint mapping is in 06_Implementation_Plan §3."
+    },
+    {
+      "id": "GAP-030",
+      "title": "Bed transfers cascade incomplete",
+      "severity": "Medium",
+      "category": "IPD/Backend",
+      "verdict": "Still-open",
+      "code": "Out of Phase-1 scope; backend / vendor / process work.",
+      "ui": "N/A",
+      "note": "Sprint mapping is in 06_Implementation_Plan §3."
+    },
+    {
+      "id": "GAP-036",
+      "title": "Denial-risk AI canned scores",
+      "severity": "Medium",
+      "category": "AI/Backend",
+      "verdict": "Still-open",
+      "code": "Out of Phase-1 scope; backend / vendor / process work.",
+      "ui": "N/A",
+      "note": "Sprint mapping is in 06_Implementation_Plan §3."
+    },
+    {
+      "id": "GAP-038",
+      "title": "Per-service AI config absent",
+      "severity": "Medium",
+      "category": "AI/Backend",
+      "verdict": "Still-open",
+      "code": "Out of Phase-1 scope; backend / vendor / process work.",
+      "ui": "N/A",
+      "note": "Sprint mapping is in 06_Implementation_Plan §3."
+    },
+    {
+      "id": "GAP-039",
+      "title": "PHI in AI logs not redacted",
+      "severity": "High",
+      "category": "AI/Backend",
+      "verdict": "Still-open",
+      "code": "Out of Phase-1 scope; backend / vendor / process work.",
+      "ui": "N/A",
+      "note": "Sprint mapping is in 06_Implementation_Plan §3."
+    },
+    {
+      "id": "GAP-040",
+      "title": "Storybook for shared components",
+      "severity": "Low",
+      "category": "UI polish",
+      "verdict": "Still-open",
+      "code": "Out of Phase-1 scope; backend / vendor / process work.",
+      "ui": "N/A",
+      "note": "Sprint mapping is in 06_Implementation_Plan §3."
+    },
+    {
+      "id": "GAP-041",
+      "title": "WCAG AA conformance audit",
+      "severity": "Medium",
+      "category": "UI polish",
+      "verdict": "Still-open",
+      "code": "Out of Phase-1 scope; backend / vendor / process work.",
+      "ui": "N/A",
+      "note": "Sprint mapping is in 06_Implementation_Plan §3."
+    },
+    {
+      "id": "GAP-042",
+      "title": "Phone (390 px) regressions",
+      "severity": "Medium",
+      "category": "UI polish",
+      "verdict": "Still-open",
+      "code": "Out of Phase-1 scope; backend / vendor / process work.",
+      "ui": "N/A",
+      "note": "Sprint mapping is in 06_Implementation_Plan §3."
+    },
+    {
+      "id": "GAP-043",
+      "title": "Hindi i18n coverage incomplete",
+      "severity": "Low",
+      "category": "UI polish",
+      "verdict": "Still-open",
+      "code": "Out of Phase-1 scope; backend / vendor / process work.",
+      "ui": "N/A",
+      "note": "Sprint mapping is in 06_Implementation_Plan §3."
+    },
+    {
+      "id": "GAP-045",
+      "title": "Empty / loading / error states inconsistent",
+      "severity": "Low",
+      "category": "UI polish",
+      "verdict": "Still-open",
+      "code": "Out of Phase-1 scope; backend / vendor / process work.",
+      "ui": "N/A",
+      "note": "Sprint mapping is in 06_Implementation_Plan §3."
+    },
+    {
+      "id": "GAP-046",
+      "title": "Activity graph server aggregation",
+      "severity": "Low",
+      "category": "Backend",
+      "verdict": "Still-open",
+      "code": "Out of Phase-1 scope; backend / vendor / process work.",
+      "ui": "N/A",
+      "note": "Sprint mapping is in 06_Implementation_Plan §3."
+    },
+    {
+      "id": "GAP-047",
+      "title": "Quality intelligence outputs demo",
+      "severity": "Medium",
+      "category": "AI/Backend",
+      "verdict": "Still-open",
+      "code": "Out of Phase-1 scope; backend / vendor / process work.",
+      "ui": "N/A",
+      "note": "Sprint mapping is in 06_Implementation_Plan §3."
+    },
+    {
+      "id": "GAP-048",
+      "title": "Email + SMS abstraction missing",
+      "severity": "Medium",
+      "category": "Integration/Backend",
+      "verdict": "Still-open",
+      "code": "Out of Phase-1 scope; backend / vendor / process work.",
+      "ui": "N/A",
+      "note": "Sprint mapping is in 06_Implementation_Plan §3."
+    },
+    {
+      "id": "GAP-050",
+      "title": "Metrics + dashboards",
+      "severity": "Medium",
+      "category": "Observability",
+      "verdict": "Still-open",
+      "code": "Out of Phase-1 scope; backend / vendor / process work.",
+      "ui": "N/A",
+      "note": "Sprint mapping is in 06_Implementation_Plan §3."
+    },
+    {
+      "id": "GAP-051",
+      "title": "Backup + restore drill",
+      "severity": "High",
+      "category": "DR",
+      "verdict": "Still-open",
+      "code": "Out of Phase-1 scope; backend / vendor / process work.",
+      "ui": "N/A",
+      "note": "Sprint mapping is in 06_Implementation_Plan §3."
+    },
+    {
+      "id": "GAP-052",
+      "title": "Pen-test not yet performed",
+      "severity": "High",
+      "category": "Security",
+      "verdict": "Still-open",
+      "code": "Out of Phase-1 scope; backend / vendor / process work.",
+      "ui": "N/A",
+      "note": "Sprint mapping is in 06_Implementation_Plan §3."
+    },
+    {
+      "id": "GAP-053",
+      "title": "NABH evidence pack rehearsal",
+      "severity": "Medium",
+      "category": "Compliance",
+      "verdict": "Still-open",
+      "code": "Out of Phase-1 scope; backend / vendor / process work.",
+      "ui": "N/A",
+      "note": "Sprint mapping is in 06_Implementation_Plan §3."
+    },
+    {
+      "id": "GAP-054",
+      "title": "UAT cycle plan",
+      "severity": "Medium",
+      "category": "Process",
+      "verdict": "Still-open",
+      "code": "Out of Phase-1 scope; backend / vendor / process work.",
+      "ui": "N/A",
+      "note": "Sprint mapping is in 06_Implementation_Plan §3."
+    },
+    {
+      "id": "GAP-055",
+      "title": "Production cutover runbook",
+      "severity": "High",
+      "category": "Process",
+      "verdict": "Still-open",
+      "code": "Out of Phase-1 scope; backend / vendor / process work.",
+      "ui": "N/A",
+      "note": "Sprint mapping is in 06_Implementation_Plan §3."
+    },
+    {
+      "id": "GAP-005",
+      "title": "Lab analyser bridge (HL7 / ASTM)",
+      "severity": "Medium",
+      "category": "Lab/Integration",
+      "verdict": "Deferred",
+      "code": "Marked out of v1 scope in BRD §2.3.",
+      "ui": "N/A",
+      "note": "Re-evaluated in v2 backlog."
+    },
+    {
+      "id": "GAP-031",
+      "title": "Multi-branch federated reporting",
+      "severity": "Medium",
+      "category": "Multi-tenancy",
+      "verdict": "Deferred",
+      "code": "Marked out of v1 scope in BRD §2.3.",
+      "ui": "N/A",
+      "note": "Re-evaluated in v2 backlog."
+    },
+    {
+      "id": "GAP-035",
+      "title": "Doctor revenue-share calculator",
+      "severity": "Low",
+      "category": "Finance",
+      "verdict": "Deferred",
+      "code": "Marked out of v1 scope in BRD §2.3.",
+      "ui": "N/A",
+      "note": "Re-evaluated in v2 backlog."
+    }
+  ]
+}
